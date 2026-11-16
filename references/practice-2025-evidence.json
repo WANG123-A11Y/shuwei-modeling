@@ -1,0 +1,2870 @@
+{
+  "scope": "2025 local-data practice; not a complete contest submission",
+  "A": {
+    "scope": "Q1 off executed; supplied-angle fits simulated diagnostically but violate acceleration feasibility. Q2/Q3 design only, no optimized/controller result claimed",
+    "sources": [
+      {
+        "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”A_Problem\\Problem A：Data.xlsx",
+        "sha256": "14d2474eceec5e7796753430b3fa6395401af9d6936fdfdae20080c434e7a224"
+      },
+      {
+        "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”A_Problem\\Problem A：Active Vibration Suppression Design Based on Centrifugal Actuators.pdf",
+        "sha256": "2bc01f5f0b15bf999c2d66f3eb44919ed612c4d2394d6cbc3e2d5d5b8e4be475"
+      }
+    ],
+    "parameters_raw": [
+      [
+        "物理意义",
+        "Physical Meaning",
+        "Specific Value",
+        "\tUnit"
+      ],
+      [
+        "车体（不包含离心式作动器）质量",
+        "Mass of Vehicle Body (excluding centrifugal actuators)",
+        2000,
+        "kg"
+      ],
+      [
+        "单个偏心块质量",
+        "Mass of a single eccentric mass",
+        100,
+        "kg"
+      ],
+      [
+        "偏心块旋转半径",
+        "Rotational radius of the eccentric mass",
+        0.2,
+        "m"
+      ],
+      [
+        "偏心块最大旋转角速度",
+        "Maximum rotational angular velocity of the eccentric mass",
+        100,
+        "rad/s"
+      ],
+      [
+        "偏心块最大旋转角加速度",
+        "Maximum rotational angular acceleration of the eccentric mass",
+        5000,
+        "rad/s²"
+      ],
+      [
+        "等效刚度系数",
+        "Equivalent stiffness coefficient",
+        7225200,
+        "N/m"
+      ],
+      [
+        "等效阻尼系数",
+        "Equivalent damping coefficient",
+        3600,
+        "N·s/m"
+      ],
+      [
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null
+      ]
+    ],
+    "assumptions": {
+      "M_kg": 2800.0,
+      "moving_mass_derivation": "2000 + 2 actuators * 4 masses * 100 = 2800",
+      "K_N_m": 7225200.0,
+      "C_N_s_m": 3600.0,
+      "kc_interpretation": "Use tabulated equivalent vehicle coefficients; 4x sensitivity is alternative interpretation, not an established fact",
+      "group_y_signs": [
+        1.0,
+        -1.0,
+        1.0,
+        -1.0
+      ],
+      "force_models": "cf=2mr sum(s*w^2 sin(q)); full=cf-2mr sum(s*alpha*cos(q))",
+      "end_extension": "F held, angles extended with final velocity and zero acceleration over 9.99--10 s",
+      "initial_angular_velocities": "Selected within feasible intervals; not specified by source"
+    },
+    "data_end_s": 9.99,
+    "angle_fit_NOT_feasible": {
+      "interpolant": "minimax acceleration, piecewise constant on refined intervals; source angles exactly constrained",
+      "subdivisions_per_source_interval": 4,
+      "chosen_v0": [
+        -20.983194488137936,
+        53.94756900042731,
+        37.186076301568775,
+        52.02934052662984
+      ],
+      "max_abs_omega": [
+        71.25313262243411,
+        63.19811669561402,
+        67.15498916067068,
+        64.07479832028956
+      ],
+      "max_abs_alpha": [
+        7233.266183156374,
+        7743.953209909769,
+        7036.892239707063,
+        7363.43799855837
+      ],
+      "max_reconstruction_error": 5.184574991545787e-12,
+      "within_given_limits": false,
+      "optimization_records": [
+        {
+          "group": 0,
+          "minimum_max_acceleration_in_this_interpolant_class": 7233.266182682226,
+          "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+        },
+        {
+          "group": 1,
+          "minimum_max_acceleration_in_this_interpolant_class": 7743.953209909731,
+          "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+        },
+        {
+          "group": 2,
+          "minimum_max_acceleration_in_this_interpolant_class": 7036.892239706984,
+          "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+        },
+        {
+          "group": 3,
+          "minimum_max_acceleration_in_this_interpolant_class": 7363.437998558367,
+          "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+        }
+      ],
+      "warning": "Minimum is over this interpolation class, not a proof for all continuous trajectories; initial angular velocity unprovided"
+    },
+    "continuous_feasibility_certificate": {
+      "derivation": "D2_i = integral triangular_kernel_i(t)*alpha(t) dt; ||kernel_(i+1)-kernel_i||_1 = 1.5*h^2; |D3| <= 1.5*h^2*amax",
+      "step_s": 0.01,
+      "records": [
+        {
+          "group": 0,
+          "source_row_indices_zero_based": [
+            206,
+            207,
+            208,
+            209
+          ],
+          "times_s": [
+            2.06,
+            2.07,
+            2.08,
+            2.09
+          ],
+          "angles_rad": [
+            -0.470392929154422,
+            -0.470392928949832,
+            0.0235140761839873,
+            0.0174210813225212
+          ],
+          "third_difference_rad": -0.9939070049245147,
+          "continuous_acceleration_necessary_lower_bound_rad_s2": 6626.046699496765
+        },
+        {
+          "group": 1,
+          "source_row_indices_zero_based": [
+            318,
+            319,
+            320,
+            321
+          ],
+          "times_s": [
+            3.18,
+            3.19,
+            3.2,
+            3.21
+          ],
+          "angles_rad": [
+            0.46008298579291,
+            0.520641769775768,
+            0.0812005537586273,
+            0.131322519583274
+          ],
+          "third_difference_rad": 0.9895631818417863,
+          "continuous_acceleration_necessary_lower_bound_rad_s2": 6597.087878945243
+        },
+        {
+          "group": 2,
+          "source_row_indices_zero_based": [
+            535,
+            536,
+            537,
+            538
+          ],
+          "times_s": [
+            5.35,
+            5.36,
+            5.37,
+            5.38
+          ],
+          "angles_rad": [
+            -0.408096612134334,
+            -0.448652545330153,
+            -0.014644948798932,
+            -0.0806373522675383
+          ],
+          "third_difference_rad": -0.9745635297268671,
+          "continuous_acceleration_necessary_lower_bound_rad_s2": 6497.090198179115
+        },
+        {
+          "group": 3,
+          "source_row_indices_zero_based": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "times_s": [
+            0.02,
+            0.03,
+            0.04,
+            0.05
+          ],
+          "angles_rad": [
+            0.1979620305944,
+            0.442276774612973,
+            0.186591518632488,
+            0.405075323562676
+          ],
+          "third_difference_rad": 0.974169060909731,
+          "continuous_acceleration_necessary_lower_bound_rad_s2": 6494.4604060648735
+        }
+      ],
+      "all_groups_contradict_5000": true,
+      "scope": "Exact angle samples in radians on uniform time grid; approximate/noisy-angle interpretation would require an explicit error tolerance"
+    },
+    "interpolation_constraints": {
+      "minimax_quadratic_4sub": {
+        "sampled_max_abs_omega": [
+          71.25313262243235,
+          63.19811669561484,
+          67.15498916067068,
+          64.07479832028956
+        ],
+        "sampled_max_abs_alpha": [
+          7233.266183156374,
+          7743.953209909769,
+          7036.892239707063,
+          7363.43799855837
+        ],
+        "dense_points_over_alpha_limit": [
+          16606,
+          16821,
+          16526,
+          16546
+        ]
+      },
+      "cubic_spline": {
+        "sampled_max_abs_omega": [
+          59.162210864875334,
+          56.77770243163673,
+          65.15828050603943,
+          56.0478882081258
+        ],
+        "sampled_max_abs_alpha": [
+          12205.61703255729,
+          13057.687704471318,
+          12510.668925357657,
+          12459.89494807609
+        ],
+        "dense_points_over_alpha_limit": [
+          1406,
+          1329,
+          1626,
+          1185
+        ]
+      },
+      "pchip": {
+        "sampled_max_abs_omega": [
+          74.0860507598417,
+          67.90101721449948,
+          68.7294364488279,
+          67.16928593276094
+        ],
+        "sampled_max_abs_alpha": [
+          29634.42029166059,
+          26366.47296102723,
+          27117.911300397314,
+          24283.33929787636
+        ],
+        "dense_points_over_alpha_limit": [
+          1866,
+          1979,
+          2242,
+          1792
+        ]
+      }
+    },
+    "main_results": {
+      "scene1_off": {
+        "I_0_10_m2_s4": 43.56605585050041,
+        "I_0_9p99_m2_s4": 43.608332404009815,
+        "RMS_acceleration_m_s2": 6.6004587606090235,
+        "max_abs_displacement_m": 0.010180335783345346,
+        "max_abs_acceleration_m_s2": 25.546046043792533,
+        "dt": 0.0005,
+        "kfactor": 1,
+        "force_model": "off",
+        "angle_interpolation": "minimax_quadratic_4sub",
+        "scenario": 1
+      },
+      "scene1_cf": {
+        "I_0_10_m2_s4": 128.28233401814742,
+        "I_0_9p99_m2_s4": 127.87701059491737,
+        "RMS_acceleration_m_s2": 11.326179144713693,
+        "max_abs_displacement_m": 0.011568726624994974,
+        "max_abs_acceleration_m_s2": 45.95885594197557,
+        "dt": 0.0005,
+        "kfactor": 1,
+        "force_model": "cf",
+        "angle_interpolation": "minimax_quadratic_4sub",
+        "scenario": 1,
+        "relative_I_reduction_vs_off": -1.9445478024991774
+      },
+      "scene1_full": {
+        "I_0_10_m2_s4": 16439.52049356723,
+        "I_0_9p99_m2_s4": 16455.66566761489,
+        "RMS_acceleration_m_s2": 128.2166935058272,
+        "max_abs_displacement_m": 0.05570467247081372,
+        "max_abs_acceleration_m_s2": 507.3869747318217,
+        "dt": 0.0005,
+        "kfactor": 1,
+        "force_model": "full",
+        "angle_interpolation": "minimax_quadratic_4sub",
+        "scenario": 1,
+        "relative_I_reduction_vs_off": -376.3470003798474
+      },
+      "scene2_off": {
+        "I_0_10_m2_s4": 13250.781442291573,
+        "I_0_9p99_m2_s4": 13242.129477348322,
+        "RMS_acceleration_m_s2": 115.11203865057543,
+        "max_abs_displacement_m": 0.0737077775590708,
+        "max_abs_acceleration_m_s2": 183.12581309085087,
+        "dt": 0.0005,
+        "kfactor": 1,
+        "force_model": "off",
+        "angle_interpolation": "minimax_quadratic_4sub",
+        "scenario": 2
+      }
+    },
+    "model_sensitivity": {
+      "cubic_spline_cf": {
+        "I_0_10_m2_s4": 107.0785122216272,
+        "I_0_9p99_m2_s4": 106.03991094375792,
+        "RMS_acceleration_m_s2": 10.347874768358341,
+        "max_abs_displacement_m": 0.011261322750986714,
+        "max_abs_acceleration_m_s2": 47.040003294495214,
+        "dt": 0.0005,
+        "kfactor": 1,
+        "force_model": "cf",
+        "angle_interpolation": "cubic_spline",
+        "scenario": 1
+      },
+      "cubic_spline_full": {
+        "I_0_10_m2_s4": 9622.95107254243,
+        "I_0_9p99_m2_s4": 9631.266015026718,
+        "RMS_acceleration_m_s2": 98.09664149471392,
+        "max_abs_displacement_m": 0.05516625700872122,
+        "max_abs_acceleration_m_s2": 619.9152155504185,
+        "dt": 0.0005,
+        "kfactor": 1,
+        "force_model": "full",
+        "angle_interpolation": "cubic_spline",
+        "scenario": 1
+      },
+      "pchip_cf": {
+        "I_0_10_m2_s4": 109.54034088028054,
+        "I_0_9p99_m2_s4": 109.52624947372429,
+        "RMS_acceleration_m_s2": 10.46615215254778,
+        "max_abs_displacement_m": 0.011077246085081496,
+        "max_abs_acceleration_m_s2": 41.185545655088035,
+        "dt": 0.0005,
+        "kfactor": 1,
+        "force_model": "cf",
+        "angle_interpolation": "pchip",
+        "scenario": 1
+      },
+      "pchip_full": {
+        "I_0_10_m2_s4": 12553.337783508247,
+        "I_0_9p99_m2_s4": 12565.809022380727,
+        "RMS_acceleration_m_s2": 112.04167877851637,
+        "max_abs_displacement_m": 0.05618445158250076,
+        "max_abs_acceleration_m_s2": 823.0678838089459,
+        "dt": 0.0005,
+        "kfactor": 1,
+        "force_model": "full",
+        "angle_interpolation": "pchip",
+        "scenario": 1
+      },
+      "four_times_kc_off": {
+        "I_0_10_m2_s4": 103.01358974323016,
+        "I_0_9p99_m2_s4": 103.11633296617984,
+        "RMS_acceleration_m_s2": 10.1495610616041,
+        "max_abs_displacement_m": 0.01,
+        "max_abs_acceleration_m_s2": 102.95890318664968,
+        "dt": 0.0005,
+        "kfactor": 4,
+        "force_model": "off",
+        "angle_interpolation": "minimax_quadratic_4sub",
+        "scenario": 1
+      },
+      "four_times_kc_cf": {
+        "I_0_10_m2_s4": 177.6171101163985,
+        "I_0_9p99_m2_s4": 177.14427075925616,
+        "RMS_acceleration_m_s2": 13.327306934125833,
+        "max_abs_displacement_m": 0.01,
+        "max_abs_acceleration_m_s2": 104.24739647016304,
+        "dt": 0.0005,
+        "kfactor": 4,
+        "force_model": "cf",
+        "angle_interpolation": "minimax_quadratic_4sub",
+        "scenario": 1
+      },
+      "four_times_kc_full": {
+        "I_0_10_m2_s4": 30512.475695024128,
+        "I_0_9p99_m2_s4": 30511.53729284511,
+        "RMS_acceleration_m_s2": 174.6782061249317,
+        "max_abs_displacement_m": 0.041369218530834445,
+        "max_abs_acceleration_m_s2": 689.7437027862708,
+        "dt": 0.0005,
+        "kfactor": 4,
+        "force_model": "full",
+        "angle_interpolation": "minimax_quadratic_4sub",
+        "scenario": 1
+      }
+    },
+    "verification": {
+      "unforced_max_y_error_m": 1.0083795513274752e-09,
+      "time_step_convergence": {
+        "scene1_off": {
+          "dt_0p0005_I": 43.56605585050041,
+          "dt_0p00025_I": 43.566056852910435,
+          "relative_difference": 2.3008968353876972e-08
+        },
+        "scene1_cf": {
+          "dt_0p0005_I": 128.28233401814742,
+          "dt_0p00025_I": 128.28222085093302,
+          "relative_difference": 8.821738013083865e-07
+        },
+        "scene1_full": {
+          "dt_0p0005_I": 16439.52049356723,
+          "dt_0p00025_I": 16439.520309332074,
+          "relative_difference": 1.1206844986375172e-08
+        }
+      },
+      "finite_difference_necessary_speed_bound": [
+        50.67961554935763,
+        49.1673340561903,
+        48.7226140063165,
+        48.55082414832887
+      ],
+      "finite_difference_necessary_accel_bound": [
+        4999.999999999919,
+        4999.999999999987,
+        4999.999999999985,
+        4999.9999999997735
+      ]
+    },
+    "runtime": {
+      "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+      "numpy": "2.5.5",
+      "platform": "Windows-11-10.0.26100-SP0",
+      "script_sha256": "aeb222c4ae6443c4696fabd8aec90a6af86787cb0659ff4c9110724f6b260ad4"
+    }
+  },
+  "B": {
+    "scope": "8-class CLOSED subset practice; NOT a 61-class solution or formal few-shot benchmark; list labels not semantically verified",
+    "classes": [
+      0,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "list_stats": {
+      "train": {
+        "rows": 31541,
+        "unique_names": 31541,
+        "ambiguous_names": 0
+      },
+      "validation": {
+        "rows": 4533,
+        "unique_names": 4533,
+        "ambiguous_names": 0
+      }
+    },
+    "annotation_stats": {
+      "AgriculturalDisease_train_annotations.json": {
+        "rows": 31718,
+        "classes": 61,
+        "classes_with_fewer_than_10": {
+          "44": 1,
+          "45": 1
+        }
+      },
+      "AgriculturalDisease_validation_annotations.json": {
+        "rows": 4540,
+        "classes": 60,
+        "classes_with_fewer_than_10": {
+          "44": 1,
+          "22": 9,
+          "5": 6,
+          "52": 4,
+          "53": 5
+        }
+      }
+    },
+    "sources": [
+      {
+        "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”B_Problem\\Problem B：Data\\AgriculturalDisease_trainingset\\train_list.txt",
+        "sha256": "d81ac187142b80da765de250c7e43dfa8bc2cd0e5f38875e2c64582bac544cdd"
+      },
+      {
+        "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”B_Problem\\Problem B：Data\\AgriculturalDisease_validationset\\ttest_list.txt",
+        "sha256": "9b374c55feee20d2ceeb81e925c75c3ba6d5578ecc850c390a4df1dba00f000a"
+      },
+      {
+        "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”B_Problem\\Problem B：Data\\AgriculturalDisease_trainingset\\AgriculturalDisease_train_annotations.json",
+        "sha256": "c788dc3aeca56d845a66713a15adfef60fdbcd0a710d1a85ec4e672dac62ae43"
+      },
+      {
+        "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”B_Problem\\Problem B：Data\\AgriculturalDisease_validationset\\AgriculturalDisease_validation_annotations.json",
+        "sha256": "6d4289ff8a28df75833ead72250ec199219f72002940d61e2295a6c0684fd995"
+      }
+    ],
+    "input_images": 4500,
+    "exact_unique_hashes": 4481,
+    "cross_split_groups_quarantined": 5,
+    "excluded_counts": {
+      "no_exact_list_label": 24,
+      "within_group_redundant_or_unlabeled": 13,
+      "cross_split_duplicate": 11
+    },
+    "train_counts": {
+      "0": 1180,
+      "10": 191,
+      "11": 167,
+      "12": 483,
+      "13": 355,
+      "14": 203,
+      "15": 477,
+      "16": 402
+    },
+    "validation_counts": {
+      "0": 169,
+      "10": 27,
+      "11": 24,
+      "12": 69,
+      "13": 51,
+      "14": 28,
+      "15": 66,
+      "16": 116
+    },
+    "validation_other_classes_excluded": 444,
+    "feature_definition": "84 features: RGB/HSV mean/std (12), RGB 8-bin normalized histograms (24), HSV 16-bin normalized histograms (48); RGB64x64",
+    "normalization": "Training subset only; refit using selected 80 images for every 10-shot seed",
+    "feature_dimension": 84,
+    "learned_scalar_count": 840,
+    "majority_class": 0,
+    "majority_baseline": {
+      "accuracy": 0.30727272727272725,
+      "macro_f1": 0.05876216968011127,
+      "macro_recall": 0.125,
+      "per_class_recall": {
+        "0": 1.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0,
+        "13": 0.0,
+        "14": 0.0,
+        "15": 0.0,
+        "16": 0.0
+      },
+      "confusion_matrix": [
+        [
+          169,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          27,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          24,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          69,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          51,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          28,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          66,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          116,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "full_train_nearest_centroid": {
+      "accuracy": 0.7527272727272727,
+      "macro_f1": 0.62343039340461,
+      "macro_recall": 0.6341884274492843,
+      "per_class_recall": {
+        "0": 0.9763313609467456,
+        "10": 0.3333333333333333,
+        "11": 0.4583333333333333,
+        "12": 0.782608695652174,
+        "13": 0.7450980392156863,
+        "14": 0.5714285714285714,
+        "15": 0.3787878787878788,
+        "16": 0.8275862068965517
+      },
+      "confusion_matrix": [
+        [
+          165,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          3,
+          9,
+          0,
+          0,
+          0,
+          10,
+          5,
+          0
+        ],
+        [
+          0,
+          8,
+          11,
+          1,
+          0,
+          0,
+          3,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          54,
+          15,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          12,
+          38,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          6,
+          0,
+          0,
+          0,
+          16,
+          6,
+          0
+        ],
+        [
+          2,
+          14,
+          11,
+          0,
+          0,
+          14,
+          25,
+          0
+        ],
+        [
+          3,
+          7,
+          0,
+          2,
+          0,
+          8,
+          0,
+          96
+        ]
+      ]
+    },
+    "ten_shot_practice": [
+      {
+        "seed": 2025,
+        "train_size": 80,
+        "metrics": {
+          "accuracy": 0.6363636363636364,
+          "macro_f1": 0.504929962501424,
+          "macro_recall": 0.5128430937019148,
+          "per_class_recall": {
+            "0": 0.8284023668639053,
+            "10": 0.18518518518518517,
+            "11": 0.3333333333333333,
+            "12": 0.5072463768115942,
+            "13": 0.803921568627451,
+            "14": 0.35714285714285715,
+            "15": 0.30303030303030304,
+            "16": 0.7844827586206896
+          },
+          "confusion_matrix": [
+            [
+              140,
+              15,
+              0,
+              2,
+              1,
+              1,
+              4,
+              6
+            ],
+            [
+              5,
+              5,
+              5,
+              0,
+              0,
+              4,
+              8,
+              0
+            ],
+            [
+              0,
+              11,
+              8,
+              1,
+              0,
+              2,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              35,
+              33,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              9,
+              41,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              6,
+              2,
+              0,
+              0,
+              10,
+              8,
+              1
+            ],
+            [
+              0,
+              23,
+              18,
+              0,
+              0,
+              5,
+              20,
+              0
+            ],
+            [
+              5,
+              2,
+              8,
+              3,
+              0,
+              6,
+              1,
+              91
+            ]
+          ]
+        },
+        "selected_train_files": [
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_28325.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_28587.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_28394.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_28408.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_28542.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_28174.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_28586.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_28573.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_27943.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_27867.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\10_17003.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\10_17080.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\10_17022.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\10_16961.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\10_16974.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\10_16984.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\10_16934.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\10_17016.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\10_16963.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\10_16998.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\11_17288.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\11_17220.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\11_17141.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\11_17271.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\11_17217.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\11_17156.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\11_17283.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\11_17145.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\11_17131.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\11_17146.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\12_25174.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\12_25427.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\12_25406.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\12_25393.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\12_25085.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\12_25315.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\12_25401.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\12_25327.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\12_25289.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\12_25364.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\13_25554.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\13_25557.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\13_25765.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\13_25541.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\13_25595.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\13_25785.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\13_25722.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\13_25730.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\13_25604.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\13_25564.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22131.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22112.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22182.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22270.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22136.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22281.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22279.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22195.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22174.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22178.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22457.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22754.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22742.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22310.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22594.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22745.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22357.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22481.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22732.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22648.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\16_8683.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\16_8618.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\16_8799.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\16_8691.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\16_8492.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\16_8761.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\16_8699.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\16_8538.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\16_8453.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\16_8472.jpg"
+        ]
+      },
+      {
+        "seed": 2026,
+        "train_size": 80,
+        "metrics": {
+          "accuracy": 0.6890909090909091,
+          "macro_f1": 0.5582594378502337,
+          "macro_recall": 0.5947190475584861,
+          "per_class_recall": {
+            "0": 0.9467455621301775,
+            "10": 0.4444444444444444,
+            "11": 0.625,
+            "12": 0.43478260869565216,
+            "13": 0.7843137254901961,
+            "14": 0.5,
+            "15": 0.21212121212121213,
+            "16": 0.8103448275862069
+          },
+          "confusion_matrix": [
+            [
+              160,
+              2,
+              0,
+              0,
+              0,
+              1,
+              6,
+              0
+            ],
+            [
+              7,
+              12,
+              3,
+              0,
+              0,
+              2,
+              3,
+              0
+            ],
+            [
+              3,
+              2,
+              15,
+              2,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              30,
+              39,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              10,
+              40,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              6,
+              2,
+              0,
+              0,
+              14,
+              4,
+              1
+            ],
+            [
+              1,
+              5,
+              26,
+              1,
+              0,
+              19,
+              14,
+              0
+            ],
+            [
+              3,
+              2,
+              0,
+              10,
+              0,
+              7,
+              0,
+              94
+            ]
+          ]
+        },
+        "selected_train_files": [
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_27447.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_27836.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_27626.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_28173.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_28419.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_27848.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_27510.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_27969.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_27855.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_28180.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\10_17066.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\10_17046.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\10_16986.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\10_16962.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\10_17075.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\10_17109.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\10_17103.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\10_17051.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\10_16954.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\10_16984.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\11_17167.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\11_17260.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\11_17207.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\11_17158.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\11_17193.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\11_17146.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\11_17259.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\11_17232.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\11_17125.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\11_17137.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\12_25052.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\12_25158.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\12_25336.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\12_25432.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\12_25207.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\12_25399.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\12_25412.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\12_25094.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\12_25267.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\12_25371.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\13_25580.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\13_25577.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\13_25679.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\13_25462.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\13_25436.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\13_25545.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\13_25527.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\13_25546.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\13_25579.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\13_25747.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22159.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22115.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22090.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22162.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22121.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22232.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22176.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22280.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22212.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22196.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22340.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22707.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22446.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22669.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22651.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22487.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22732.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22668.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22308.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22539.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\16_8452.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\16_8656.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\16_8570.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\16_8581.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\16_8672.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\16_8722.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\16_8706.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\16_8554.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\16_8529.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\16_8718.jpg"
+        ]
+      },
+      {
+        "seed": 2027,
+        "train_size": 80,
+        "metrics": {
+          "accuracy": 0.66,
+          "macro_f1": 0.5457384797333646,
+          "macro_recall": 0.558015402851257,
+          "per_class_recall": {
+            "0": 0.8461538461538461,
+            "10": 0.3333333333333333,
+            "11": 0.4166666666666667,
+            "12": 0.6956521739130435,
+            "13": 0.6862745098039216,
+            "14": 0.42857142857142855,
+            "15": 0.3333333333333333,
+            "16": 0.7241379310344828
+          },
+          "confusion_matrix": [
+            [
+              143,
+              6,
+              0,
+              0,
+              0,
+              6,
+              10,
+              4
+            ],
+            [
+              4,
+              9,
+              4,
+              0,
+              0,
+              2,
+              8,
+              0
+            ],
+            [
+              0,
+              9,
+              10,
+              0,
+              0,
+              0,
+              4,
+              1
+            ],
+            [
+              0,
+              4,
+              0,
+              48,
+              17,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              0,
+              13,
+              35,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              3,
+              4,
+              0,
+              0,
+              12,
+              7,
+              1
+            ],
+            [
+              0,
+              9,
+              17,
+              0,
+              0,
+              18,
+              22,
+              0
+            ],
+            [
+              4,
+              21,
+              0,
+              2,
+              0,
+              4,
+              1,
+              84
+            ]
+          ]
+        },
+        "selected_train_files": [
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_27752.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_28007.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_27426.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_28504.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_27872.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_28161.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_27591.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_27514.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_27949.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_27983.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\10_16937.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\10_17066.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\10_17032.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\10_16948.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\10_17100.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\10_17003.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\10_16933.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\10_17067.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\10_17065.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\10_17094.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\11_17129.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\11_17136.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\11_17236.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\11_17284.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\11_17257.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\11_17216.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\11_17261.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\11_17264.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\11_17139.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\11_17269.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\12_25300.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\12_25333.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\12_25003.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\12_25299.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\12_25101.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\12_25389.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\12_25040.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\12_25053.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\12_25051.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\12_25064.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\13_25627.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\13_25469.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\13_25745.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\13_25552.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\13_25494.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\13_25542.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\13_25476.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\13_25650.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\13_25513.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\13_25564.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22171.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22266.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22182.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22223.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22136.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22226.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22269.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22156.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22244.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22088.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22639.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22461.JPG",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22413.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22717.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22632.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22365.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22509.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22737.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22368.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22646.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\16_8727.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\16_8605.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\16_8522.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\16_8546.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\16_8555.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\16_8633.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\16_8740.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\16_8747.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\16_8752.jpg",
+          "Problem B：Data\\AgriculturalDisease_trainingset\\images\\16_8591.jpg"
+        ]
+      }
+    ],
+    "ten_shot_summary": {
+      "accuracy": {
+        "mean": 0.6618181818181817,
+        "std_population": 0.02156417802988751
+      },
+      "macro_f1": {
+        "mean": 0.5363092933616741,
+        "std_population": 0.022769722615334043
+      }
+    },
+    "timing_seconds": {
+      "audit_and_features": 7.705628600000182,
+      "total": 7.974649000000227
+    },
+    "limits": [
+      "No near-duplicate or acquisition-group audit",
+      "No semantic/visual ground-truth confirmation",
+      "No severity training labels created",
+      "No claim of task1/task2/task3/task4 completion",
+      "No test-driven hyperparameter selection"
+    ],
+    "runtime": {
+      "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+      "numpy": "2.5.5",
+      "script_sha256": "87f5121411cbc2ffec1c59b100d72f4444ca501b701c8cd91d093090b361696e"
+    },
+    "problem_pdf_source": {
+      "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”B_Problem\\Problem B：Research on Crop Leaf Disease.pdf",
+      "sha256": "d014ec9a9ef39e588bbdbc1c1dfed82a85b35d20ceff3e4ba7e8ae0ef1cff449"
+    }
+  },
+  "C": {
+    "scope": "Metadata/readiness audit plus synthetic consistency checks; no real-city numerical risk output",
+    "pdf_sources": [
+      {
+        "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”C_Problem\\Problem C：Urban Seawater Intrusion Risk Assessment and Governance Planning.pdf",
+        "sha256": "4e2e58cd4c24807c785233292cf03d5a44da3e4eb214c31926873ee06136888c"
+      }
+    ],
+    "rasters": [
+      {
+        "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”C_Problem\\Problem C：Data\\Dataset\\Dataset 7\\上海\\上海.tif",
+        "file_size": 18604563,
+        "content_hash_status": "NOT_COMPUTED; metadata-only audit, no pixel calculations",
+        "tags": {
+          "256": 9198,
+          "257": 10471,
+          "258": [
+            16
+          ],
+          "259": 5,
+          "277": 1,
+          "339": [
+            2
+          ],
+          "33550": [
+            12.5,
+            12.5,
+            0.0
+          ],
+          "33922": [
+            0.0,
+            0.0,
+            0.0,
+            295236.078125,
+            3527595.5,
+            0.0
+          ],
+          "34735": [
+            1,
+            1,
+            0,
+            7,
+            1024,
+            0,
+            1,
+            1,
+            1025,
+            0,
+            1,
+            1,
+            1026,
+            34737,
+            22,
+            0,
+            2049,
+            34737,
+            7,
+            22,
+            2054,
+            0,
+            1,
+            9102,
+            3072,
+            0,
+            1,
+            32651,
+            3076,
+            0,
+            1,
+            9001
+          ],
+          "34737": "WGS 84 / UTM zone 51N|WGS 84|",
+          "42113": "0"
+        },
+        "geokeys": {
+          "1024": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 1
+          },
+          "1025": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 1
+          },
+          "1026": {
+            "location": 34737,
+            "count": 22,
+            "value_or_offset": 0
+          },
+          "2049": {
+            "location": 34737,
+            "count": 7,
+            "value_or_offset": 22
+          },
+          "2054": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 9102
+          },
+          "3072": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 32651
+          },
+          "3076": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 9001
+          }
+        },
+        "metadata_sha256": "34a07dbfbb58c3635d4a0c454c93df7812d853ba523626aca8662c65f13da858"
+      },
+      {
+        "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”C_Problem\\Problem C：Data\\Dataset\\Dataset 7\\天津\\天津市.tif",
+        "file_size": 1379110,
+        "content_hash_status": "NOT_COMPUTED; metadata-only audit, no pixel calculations",
+        "tags": {
+          "256": 674,
+          "257": 843,
+          "258": [
+            16
+          ],
+          "259": 1,
+          "277": 1,
+          "339": [
+            2
+          ],
+          "33550": [
+            0.002013485949555017,
+            0.0020134859495550207,
+            0.0
+          ],
+          "33922": [
+            0.0,
+            0.0,
+            0.0,
+            116.70212767300006,
+            40.25179020400008,
+            0.0
+          ],
+          "34735": [
+            1,
+            1,
+            0,
+            13,
+            1024,
+            0,
+            1,
+            2,
+            1025,
+            0,
+            1,
+            1,
+            2048,
+            0,
+            1,
+            4326,
+            2049,
+            34737,
+            84,
+            0,
+            2050,
+            0,
+            1,
+            6326,
+            2051,
+            0,
+            1,
+            8901,
+            2054,
+            0,
+            1,
+            9102,
+            2055,
+            34736,
+            1,
+            0,
+            2056,
+            0,
+            1,
+            7030,
+            2057,
+            34736,
+            1,
+            1,
+            2059,
+            34736,
+            1,
+            2,
+            2061,
+            34736,
+            1,
+            3,
+            3073,
+            34737,
+            163,
+            84
+          ],
+          "34737": "GCS Name = GCS_WGS_1984|Datum = D_WGS_1984|Ellipsoid = WGS_1984|Primem = Greenwich||ESRI PE String = GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]]|",
+          "42112": "<GDALMetadata>\n  <Item name=\"DataType\">Generic</Item>\n  <Item name=\"PyramidResamplingType\" domain=\"Esri\">NEAREST</Item>\n  <Item name=\"RepresentationType\" sample=\"0\">THEMATIC</Item>\n  <Item name=\"STATISTICS_COVARIANCES\" sample=\"0\">4292.831891937518</Item>\n  <Item name=\"STATISTICS_MAXIMUM\" sample=\"0\">1020</Item>\n  <Item name=\"STATISTICS_MEAN\" sample=\"0\">17.987539249147</Item>\n  <Item name=\"STATISTICS_MINIMUM\" sample=\"0\">-36</Item>\n  <Item name=\"STATISTICS_SKIPFACTORX\" sample=\"0\">1</Item>\n  <Item name=\"STATISTICS_SKIPFACTORY\" sample=\"0\">1</Item>\n  <Item name=\"STATISTICS_STDDEV\" sample=\"0\">65.519706134395</Item>\n</GDALMetadata>\n",
+          "42113": "32767"
+        },
+        "geokeys": {
+          "1024": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 2
+          },
+          "1025": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 1
+          },
+          "2048": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 4326
+          },
+          "2049": {
+            "location": 34737,
+            "count": 84,
+            "value_or_offset": 0
+          },
+          "2050": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 6326
+          },
+          "2051": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 8901
+          },
+          "2054": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 9102
+          },
+          "2055": {
+            "location": 34736,
+            "count": 1,
+            "value_or_offset": 0
+          },
+          "2056": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 7030
+          },
+          "2057": {
+            "location": 34736,
+            "count": 1,
+            "value_or_offset": 1
+          },
+          "2059": {
+            "location": 34736,
+            "count": 1,
+            "value_or_offset": 2
+          },
+          "2061": {
+            "location": 34736,
+            "count": 1,
+            "value_or_offset": 3
+          },
+          "3073": {
+            "location": 34737,
+            "count": 163,
+            "value_or_offset": 84
+          }
+        },
+        "metadata_sha256": "37d7cf1f1dee72154e76996d880d1c37a0ba1507198f8d85d741da41a96264bf"
+      },
+      {
+        "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”C_Problem\\Problem C：Data\\Dataset\\Dataset 7\\山东\\山东.tif",
+        "file_size": 698561524,
+        "content_hash_status": "NOT_COMPUTED; metadata-only audit, no pixel calculations",
+        "tags": {
+          "256": 56407,
+          "257": 36226,
+          "258": [
+            16
+          ],
+          "259": 5,
+          "277": 1,
+          "339": [
+            2
+          ],
+          "33550": [
+            12.5,
+            12.5,
+            0.0
+          ],
+          "33922": [
+            0.0,
+            0.0,
+            0.0,
+            300223.171875,
+            4257484.25,
+            0.0
+          ],
+          "34735": [
+            1,
+            1,
+            0,
+            7,
+            1024,
+            0,
+            1,
+            1,
+            1025,
+            0,
+            1,
+            1,
+            1026,
+            34737,
+            22,
+            0,
+            2049,
+            34737,
+            7,
+            22,
+            2054,
+            0,
+            1,
+            9102,
+            3072,
+            0,
+            1,
+            32650,
+            3076,
+            0,
+            1,
+            9001
+          ],
+          "34737": "WGS 84 / UTM zone 50N|WGS 84|",
+          "42112": "<GDALMetadata>\n  <Item name=\"PyramidResamplingType\" domain=\"Esri\">NEAREST</Item>\n</GDALMetadata>\n",
+          "42113": "0"
+        },
+        "geokeys": {
+          "1024": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 1
+          },
+          "1025": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 1
+          },
+          "1026": {
+            "location": 34737,
+            "count": 22,
+            "value_or_offset": 0
+          },
+          "2049": {
+            "location": 34737,
+            "count": 7,
+            "value_or_offset": 22
+          },
+          "2054": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 9102
+          },
+          "3072": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 32650
+          },
+          "3076": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 9001
+          }
+        },
+        "metadata_sha256": "374081f32ecb485213e15d85ab27aa2914639d7c314227943b392cd4b9ed2041"
+      },
+      {
+        "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”C_Problem\\Problem C：Data\\Dataset\\Dataset 7\\江苏\\江苏.tif",
+        "file_size": 293141900,
+        "content_hash_status": "NOT_COMPUTED; metadata-only audit, no pixel calculations",
+        "tags": {
+          "256": 42090,
+          "257": 38495,
+          "258": [
+            16
+          ],
+          "259": 5,
+          "277": 1,
+          "339": [
+            2
+          ],
+          "33550": [
+            12.5,
+            12.5,
+            0.0
+          ],
+          "33922": [
+            0.0,
+            0.0,
+            0.0,
+            441011.15625,
+            3889462.75,
+            0.0
+          ],
+          "34735": [
+            1,
+            1,
+            0,
+            7,
+            1024,
+            0,
+            1,
+            1,
+            1025,
+            0,
+            1,
+            1,
+            1026,
+            34737,
+            22,
+            0,
+            2049,
+            34737,
+            7,
+            22,
+            2054,
+            0,
+            1,
+            9102,
+            3072,
+            0,
+            1,
+            32650,
+            3076,
+            0,
+            1,
+            9001
+          ],
+          "34737": "WGS 84 / UTM zone 50N|WGS 84|",
+          "42113": "0"
+        },
+        "geokeys": {
+          "1024": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 1
+          },
+          "1025": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 1
+          },
+          "1026": {
+            "location": 34737,
+            "count": 22,
+            "value_or_offset": 0
+          },
+          "2049": {
+            "location": 34737,
+            "count": 7,
+            "value_or_offset": 22
+          },
+          "2054": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 9102
+          },
+          "3072": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 32650
+          },
+          "3076": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 9001
+          }
+        },
+        "metadata_sha256": "58c6ecf2e119c5da06b5e69c2a66bf77cfaa4d519226ee0b7dd875f8eef8d11e"
+      },
+      {
+        "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”C_Problem\\Problem C：Data\\Dataset\\Dataset 7\\河北\\河北.tif",
+        "file_size": 1247070893,
+        "content_hash_status": "NOT_COMPUTED; metadata-only audit, no pixel calculations",
+        "tags": {
+          "256": 44808,
+          "257": 58192,
+          "258": [
+            16
+          ],
+          "259": 5,
+          "277": 1,
+          "339": [
+            2
+          ],
+          "33550": [
+            12.49455503964446,
+            12.494561607943764,
+            0.0
+          ],
+          "33922": [
+            0.0,
+            0.0,
+            0.0,
+            183367.75820343714,
+            4718460.101584568,
+            0.0
+          ],
+          "34735": [
+            1,
+            1,
+            0,
+            7,
+            1024,
+            0,
+            1,
+            1,
+            1025,
+            0,
+            1,
+            1,
+            1026,
+            34737,
+            22,
+            0,
+            2049,
+            34737,
+            7,
+            22,
+            2054,
+            0,
+            1,
+            9102,
+            3072,
+            0,
+            1,
+            32650,
+            3076,
+            0,
+            1,
+            9001
+          ],
+          "34737": "WGS 84 / UTM zone 50N|WGS 84|",
+          "42113": "0"
+        },
+        "geokeys": {
+          "1024": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 1
+          },
+          "1025": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 1
+          },
+          "1026": {
+            "location": 34737,
+            "count": 22,
+            "value_or_offset": 0
+          },
+          "2049": {
+            "location": 34737,
+            "count": 7,
+            "value_or_offset": 22
+          },
+          "2054": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 9102
+          },
+          "3072": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 32650
+          },
+          "3076": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 9001
+          }
+        },
+        "metadata_sha256": "53de8714ffdf56e7d6668af9267f743d5a9f5a99570ced921311e000f74b2cd5"
+      },
+      {
+        "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”C_Problem\\Problem C：Data\\Dataset\\Dataset 7\\浙江\\浙江.tif",
+        "file_size": 794831430,
+        "content_hash_status": "NOT_COMPUTED; metadata-only audit, no pixel calculations",
+        "tags": {
+          "256": 45532,
+          "257": 38222,
+          "258": [
+            16
+          ],
+          "259": 5,
+          "277": 1,
+          "339": [
+            2
+          ],
+          "33550": [
+            0.00010567615433661273,
+            0.00010567615433661273,
+            0.0
+          ],
+          "33922": [
+            0.0,
+            0.0,
+            0.0,
+            118.02257356519999,
+            31.182556059799985,
+            0.0
+          ],
+          "34735": [
+            1,
+            1,
+            0,
+            7,
+            1024,
+            0,
+            1,
+            2,
+            1025,
+            0,
+            1,
+            1,
+            2048,
+            0,
+            1,
+            4326,
+            2049,
+            34737,
+            7,
+            0,
+            2054,
+            0,
+            1,
+            9102,
+            2057,
+            34736,
+            1,
+            1,
+            2059,
+            34736,
+            1,
+            0
+          ],
+          "34737": "WGS 84|",
+          "42113": "-32767"
+        },
+        "geokeys": {
+          "1024": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 2
+          },
+          "1025": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 1
+          },
+          "2048": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 4326
+          },
+          "2049": {
+            "location": 34737,
+            "count": 7,
+            "value_or_offset": 0
+          },
+          "2054": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 9102
+          },
+          "2057": {
+            "location": 34736,
+            "count": 1,
+            "value_or_offset": 1
+          },
+          "2059": {
+            "location": 34736,
+            "count": 1,
+            "value_or_offset": 0
+          }
+        },
+        "metadata_sha256": "029f7315e9d47a9d457f58579f00ca837966ff77af16294e705dbcfb4ba187b4"
+      },
+      {
+        "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”C_Problem\\Problem C：Data\\Dataset\\Dataset 7\\福建\\福建.tif",
+        "file_size": 1196752606,
+        "content_hash_status": "NOT_COMPUTED; metadata-only audit, no pixel calculations",
+        "tags": {
+          "256": 38861,
+          "257": 42178,
+          "258": [
+            16
+          ],
+          "259": 5,
+          "277": 1,
+          "339": [
+            2
+          ],
+          "33550": [
+            12.5,
+            12.5,
+            0.0
+          ],
+          "33922": [
+            0.0,
+            0.0,
+            0.0,
+            383784.84375,
+            3133548.5,
+            0.0
+          ],
+          "34735": [
+            1,
+            1,
+            0,
+            7,
+            1024,
+            0,
+            1,
+            1,
+            1025,
+            0,
+            1,
+            1,
+            1026,
+            34737,
+            22,
+            0,
+            2049,
+            34737,
+            7,
+            22,
+            2054,
+            0,
+            1,
+            9102,
+            3072,
+            0,
+            1,
+            32650,
+            3076,
+            0,
+            1,
+            9001
+          ],
+          "34737": "WGS 84 / UTM zone 50N|WGS 84|",
+          "42113": "0"
+        },
+        "geokeys": {
+          "1024": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 1
+          },
+          "1025": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 1
+          },
+          "1026": {
+            "location": 34737,
+            "count": 22,
+            "value_or_offset": 0
+          },
+          "2049": {
+            "location": 34737,
+            "count": 7,
+            "value_or_offset": 22
+          },
+          "2054": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 9102
+          },
+          "3072": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 32650
+          },
+          "3076": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 9001
+          }
+        },
+        "metadata_sha256": "37cf9637006a75191646dc2bcfc5c45b8fb424245ec8770ac5c818cb3a60847e"
+      },
+      {
+        "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”C_Problem\\Problem C：Data\\Dataset\\Dataset 7\\辽宁\\辽宁省.tif",
+        "file_size": 16820374,
+        "content_hash_status": "NOT_COMPUTED; metadata-only audit, no pixel calculations",
+        "tags": {
+          "256": 3448,
+          "257": 2367,
+          "258": [
+            16
+          ],
+          "259": 1,
+          "277": 1,
+          "339": [
+            2
+          ],
+          "33550": [
+            0.0020150601787072386,
+            0.002015060178707241,
+            0.0
+          ],
+          "33922": [
+            0.0,
+            0.0,
+            0.0,
+            118.83942432200001,
+            43.48857102800012,
+            0.0
+          ],
+          "34735": [
+            1,
+            1,
+            0,
+            13,
+            1024,
+            0,
+            1,
+            2,
+            1025,
+            0,
+            1,
+            1,
+            2048,
+            0,
+            1,
+            4326,
+            2049,
+            34737,
+            84,
+            0,
+            2050,
+            0,
+            1,
+            6326,
+            2051,
+            0,
+            1,
+            8901,
+            2054,
+            0,
+            1,
+            9102,
+            2055,
+            34736,
+            1,
+            0,
+            2056,
+            0,
+            1,
+            7030,
+            2057,
+            34736,
+            1,
+            1,
+            2059,
+            34736,
+            1,
+            2,
+            2061,
+            34736,
+            1,
+            3,
+            3073,
+            34737,
+            163,
+            84
+          ],
+          "34737": "GCS Name = GCS_WGS_1984|Datum = D_WGS_1984|Ellipsoid = WGS_1984|Primem = Greenwich||ESRI PE String = GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]]|",
+          "42112": "<GDALMetadata>\n  <Item name=\"DataType\">Generic</Item>\n  <Item name=\"PyramidResamplingType\" domain=\"Esri\">NEAREST</Item>\n  <Item name=\"RepresentationType\" sample=\"0\">THEMATIC</Item>\n  <Item name=\"STATISTICS_COVARIANCES\" sample=\"0\">43772.84043799351</Item>\n  <Item name=\"STATISTICS_MAXIMUM\" sample=\"0\">1330</Item>\n  <Item name=\"STATISTICS_MEAN\" sample=\"0\">235.20143734495</Item>\n  <Item name=\"STATISTICS_MINIMUM\" sample=\"0\">-263</Item>\n  <Item name=\"STATISTICS_SKIPFACTORX\" sample=\"0\">1</Item>\n  <Item name=\"STATISTICS_SKIPFACTORY\" sample=\"0\">1</Item>\n  <Item name=\"STATISTICS_STDDEV\" sample=\"0\">209.21959859916</Item>\n</GDALMetadata>\n",
+          "42113": "32767"
+        },
+        "geokeys": {
+          "1024": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 2
+          },
+          "1025": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 1
+          },
+          "2048": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 4326
+          },
+          "2049": {
+            "location": 34737,
+            "count": 84,
+            "value_or_offset": 0
+          },
+          "2050": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 6326
+          },
+          "2051": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 8901
+          },
+          "2054": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 9102
+          },
+          "2055": {
+            "location": 34736,
+            "count": 1,
+            "value_or_offset": 0
+          },
+          "2056": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 7030
+          },
+          "2057": {
+            "location": 34736,
+            "count": 1,
+            "value_or_offset": 1
+          },
+          "2059": {
+            "location": 34736,
+            "count": 1,
+            "value_or_offset": 2
+          },
+          "2061": {
+            "location": 34736,
+            "count": 1,
+            "value_or_offset": 3
+          },
+          "3073": {
+            "location": 34737,
+            "count": 163,
+            "value_or_offset": 84
+          }
+        },
+        "metadata_sha256": "82860a10d5ec7eab694623da6c2fefeee93e5ca987832feae762296d81db0961"
+      },
+      {
+        "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”C_Problem\\Problem C：Data\\Dataset\\Dataset 9\\土地利用数据.tif",
+        "file_size": 946260720,
+        "content_hash_status": "NOT_COMPUTED; metadata-only audit, no pixel calculations",
+        "tags": {
+          "256": 228579,
+          "257": 131361,
+          "258": [
+            8
+          ],
+          "259": 5,
+          "277": 1,
+          "339": [
+            1
+          ],
+          "33550": [
+            0.0002694945852358565,
+            0.0002694945852358565,
+            0.0
+          ],
+          "33922": [
+            0.0,
+            0.0,
+            0.0,
+            73.4862484659363,
+            53.561451959200134,
+            0.0
+          ],
+          "34735": [
+            1,
+            1,
+            0,
+            13,
+            1024,
+            0,
+            1,
+            2,
+            1025,
+            0,
+            1,
+            1,
+            2048,
+            0,
+            1,
+            4326,
+            2049,
+            34737,
+            84,
+            0,
+            2050,
+            0,
+            1,
+            6326,
+            2051,
+            0,
+            1,
+            8901,
+            2054,
+            0,
+            1,
+            9102,
+            2055,
+            34736,
+            1,
+            0,
+            2056,
+            0,
+            1,
+            7030,
+            2057,
+            34736,
+            1,
+            1,
+            2059,
+            34736,
+            1,
+            2,
+            2061,
+            34736,
+            1,
+            3,
+            3073,
+            34737,
+            163,
+            84
+          ],
+          "34737": "GCS Name = GCS_WGS_1984|Datum = D_WGS_1984|Ellipsoid = WGS_1984|Primem = Greenwich||ESRI PE String = GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]]|",
+          "42112": "<GDALMetadata>\n  <Item name=\"PyramidResamplingType\" domain=\"Esri\">NEAREST</Item>\n  <Item name=\"STATISTICS_MAXIMUM\" sample=\"0\">9</Item>\n  <Item name=\"STATISTICS_MEAN\" sample=\"0\">3.6685480488744</Item>\n  <Item name=\"STATISTICS_MINIMUM\" sample=\"0\">1</Item>\n  <Item name=\"STATISTICS_SKIPFACTORX\" sample=\"0\">1</Item>\n  <Item name=\"STATISTICS_SKIPFACTORY\" sample=\"0\">1</Item>\n  <Item name=\"STATISTICS_STDDEV\" sample=\"0\">2.2408108764653</Item>\n</GDALMetadata>\n",
+          "42113": "0"
+        },
+        "geokeys": {
+          "1024": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 2
+          },
+          "1025": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 1
+          },
+          "2048": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 4326
+          },
+          "2049": {
+            "location": 34737,
+            "count": 84,
+            "value_or_offset": 0
+          },
+          "2050": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 6326
+          },
+          "2051": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 8901
+          },
+          "2054": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 9102
+          },
+          "2055": {
+            "location": 34736,
+            "count": 1,
+            "value_or_offset": 0
+          },
+          "2056": {
+            "location": 0,
+            "count": 1,
+            "value_or_offset": 7030
+          },
+          "2057": {
+            "location": 34736,
+            "count": 1,
+            "value_or_offset": 1
+          },
+          "2059": {
+            "location": 34736,
+            "count": 1,
+            "value_or_offset": 2
+          },
+          "2061": {
+            "location": 34736,
+            "count": 1,
+            "value_or_offset": 3
+          },
+          "3073": {
+            "location": 34737,
+            "count": 163,
+            "value_or_offset": 84
+          }
+        },
+        "metadata_sha256": "58ede3c741ef2d93fc78b2bc96cd772a6d710e2062cc6a690fe6582eba42b945"
+      }
+    ],
+    "shapefiles": [
+      {
+        "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”C_Problem\\Problem C：Data\\Dataset\\Dataset 5\\土壤类型矢量_上海市\\土壤类型矢量_上海市.shp",
+        "file_size": 25836,
+        "header_bbox_Xmin_Ymin_Xmax_Ymax": [
+          1018961.7242425784,
+          3309689.7044696244,
+          1119262.0,
+          3438596.0
+        ],
+        "shape_type": 5,
+        "dbf_record_count": 9,
+        "prj": "PROJCS[\"Krasovsky_1940_Albers\",GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Albers\"],PARAMETER[\"False_Easting\",0.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",110.0],PARAMETER[\"Standard_Parallel_1\",25.0],PARAMETER[\"Standard_Parallel_2\",47.0],PARAMETER[\"Latitude_Of_Origin\",0.0],UNIT[\"Meter\",1.0]]",
+        "prj_sha256": "dd9e0d8ce05657c9b2d3543f3e1ee5b43eb2a39ed9ab03e3c25dc1a9da54f468",
+        "header_sha256": "1fca91b3234450fe66bdfd982820455705e3017b3c3e14cd9715c0c6f5a0d492",
+        "full_geometry_read": false
+      },
+      {
+        "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”C_Problem\\Problem C：Data\\Dataset\\Dataset 5\\土壤类型矢量_天津市\\土壤类型矢量_天津市.shp",
+        "file_size": 76620,
+        "header_bbox_Xmin_Ymin_Xmax_Ymax": [
+          570524.3630839981,
+          4159299.463582384,
+          682988.1356611509,
+          4351604.154708814
+        ],
+        "shape_type": 5,
+        "dbf_record_count": 12,
+        "prj": "PROJCS[\"Krasovsky_1940_Albers\",GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Albers\"],PARAMETER[\"False_Easting\",0.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",110.0],PARAMETER[\"Standard_Parallel_1\",25.0],PARAMETER[\"Standard_Parallel_2\",47.0],PARAMETER[\"Latitude_Of_Origin\",0.0],UNIT[\"Meter\",1.0]]",
+        "prj_sha256": "dd9e0d8ce05657c9b2d3543f3e1ee5b43eb2a39ed9ab03e3c25dc1a9da54f468",
+        "header_sha256": "8e36625c35d0378e5bcaf7d14f8c635dc1ead9e41f69a8af545090371b404df7",
+        "full_geometry_read": false
+      },
+      {
+        "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”C_Problem\\Problem C：Data\\Dataset\\Dataset 5\\土壤类型矢量_山东省\\土壤类型矢量_山东省.shp",
+        "file_size": 213024,
+        "header_bbox_Xmin_Ymin_Xmax_Ymax": [
+          430869.83997112454,
+          3693938.941753906,
+          1100563.1321129014,
+          4170421.6981380815
+        ],
+        "shape_type": 5,
+        "dbf_record_count": 60,
+        "prj": "PROJCS[\"Krasovsky_1940_Albers\",GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Albers\"],PARAMETER[\"False_Easting\",0.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",110.0],PARAMETER[\"Standard_Parallel_1\",25.0],PARAMETER[\"Standard_Parallel_2\",47.0],PARAMETER[\"Latitude_Of_Origin\",0.0],UNIT[\"Meter\",1.0]]",
+        "prj_sha256": "dd9e0d8ce05657c9b2d3543f3e1ee5b43eb2a39ed9ab03e3c25dc1a9da54f468",
+        "header_sha256": "8d0fddba1139d4483484108724730ddf1d88ac3e921988b637bab743de5c6649",
+        "full_geometry_read": false
+      },
+      {
+        "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”C_Problem\\Problem C：Data\\Dataset\\Dataset 5\\土壤类型矢量_江苏省\\土壤类型矢量_江苏省.shp",
+        "file_size": 216052,
+        "header_bbox_Xmin_Ymin_Xmax_Ymax": [
+          571401.2729939849,
+          3309403.788604002,
+          1109072.0,
+          3787625.755320245
+        ],
+        "shape_type": 5,
+        "dbf_record_count": 68,
+        "prj": "PROJCS[\"Krasovsky_1940_Albers\",GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Albers\"],PARAMETER[\"False_Easting\",0.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",110.0],PARAMETER[\"Standard_Parallel_1\",25.0],PARAMETER[\"Standard_Parallel_2\",47.0],PARAMETER[\"Latitude_Of_Origin\",0.0],UNIT[\"Meter\",1.0]]",
+        "prj_sha256": "dd9e0d8ce05657c9b2d3543f3e1ee5b43eb2a39ed9ab03e3c25dc1a9da54f468",
+        "header_sha256": "e64c34aed99bff746ef75dfbc49a083c7f2d6128e7401dd31f11de2d81f363a3",
+        "full_geometry_read": false
+      },
+      {
+        "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”C_Problem\\Problem C：Data\\Dataset\\Dataset 5\\土壤类型矢量_河北省\\土壤类型矢量_河北省.shp",
+        "file_size": 423532,
+        "header_bbox_Xmin_Ymin_Xmax_Ymax": [
+          301753.8410598252,
+          3864057.642556653,
+          825458.9887561756,
+          4619516.378635099
+        ],
+        "shape_type": 5,
+        "dbf_record_count": 65,
+        "prj": "PROJCS[\"Krasovsky_1940_Albers\",GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Albers\"],PARAMETER[\"False_Easting\",0.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",110.0],PARAMETER[\"Standard_Parallel_1\",25.0],PARAMETER[\"Standard_Parallel_2\",47.0],PARAMETER[\"Latitude_Of_Origin\",0.0],UNIT[\"Meter\",1.0]]",
+        "prj_sha256": "dd9e0d8ce05657c9b2d3543f3e1ee5b43eb2a39ed9ab03e3c25dc1a9da54f468",
+        "header_sha256": "803af677d2e97b356277ab28838a1efa42bb7b5d91f9fd7d43db4cc524823ccb",
+        "full_geometry_read": false
+      },
+      {
+        "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”C_Problem\\Problem C：Data\\Dataset\\Dataset 5\\土壤类型矢量_浙江省\\土壤类型矢量_浙江省.shp",
+        "file_size": 199984,
+        "header_bbox_Xmin_Ymin_Xmax_Ymax": [
+          771490.3350211799,
+          2909315.0,
+          1186851.4957770805,
+          3349959.5226452844
+        ],
+        "shape_type": 5,
+        "dbf_record_count": 66,
+        "prj": "PROJCS[\"Krasovsky_1940_Albers\",GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Albers\"],PARAMETER[\"False_Easting\",0.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",110.0],PARAMETER[\"Standard_Parallel_1\",25.0],PARAMETER[\"Standard_Parallel_2\",47.0],PARAMETER[\"Latitude_Of_Origin\",0.0],UNIT[\"Meter\",1.0]]",
+        "prj_sha256": "dd9e0d8ce05657c9b2d3543f3e1ee5b43eb2a39ed9ab03e3c25dc1a9da54f468",
+        "header_sha256": "294c6c0b2e81710efaff518e1a519c15b826d9e8b37e959e546e6fb463036125",
+        "full_geometry_read": false
+      },
+      {
+        "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”C_Problem\\Problem C：Data\\Dataset\\Dataset 5\\土壤类型矢量_福建省\\土壤类型矢量_福建省.shp",
+        "file_size": 239192,
+        "header_bbox_Xmin_Ymin_Xmax_Ymax": [
+          588778.709839161,
+          2485858.0,
+          1026663.6848360874,
+          3020364.048205878
+        ],
+        "shape_type": 5,
+        "dbf_record_count": 69,
+        "prj": "PROJCS[\"Krasovsky_1940_Albers\",GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Albers\"],PARAMETER[\"False_Easting\",0.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",110.0],PARAMETER[\"Standard_Parallel_1\",25.0],PARAMETER[\"Standard_Parallel_2\",47.0],PARAMETER[\"Latitude_Of_Origin\",0.0],UNIT[\"Meter\",1.0]]",
+        "prj_sha256": "dd9e0d8ce05657c9b2d3543f3e1ee5b43eb2a39ed9ab03e3c25dc1a9da54f468",
+        "header_sha256": "38802f08a5f01d71ac300688293aad743a68c7cf3432391eafdd9f9e6a44eef6",
+        "full_geometry_read": false
+      },
+      {
+        "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”C_Problem\\Problem C：Data\\Dataset\\Dataset 5\\土壤类型矢量_辽宁省\\土壤类型矢量_辽宁省.shp",
+        "file_size": 316876,
+        "header_bbox_Xmin_Ymin_Xmax_Ymax": [
+          733103.2756822784,
+          4209788.246919829,
+          1299112.216114837,
+          4769357.447386777
+        ],
+        "shape_type": 5,
+        "dbf_record_count": 79,
+        "prj": "PROJCS[\"Krasovsky_1940_Albers\",GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Albers\"],PARAMETER[\"False_Easting\",0.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",110.0],PARAMETER[\"Standard_Parallel_1\",25.0],PARAMETER[\"Standard_Parallel_2\",47.0],PARAMETER[\"Latitude_Of_Origin\",0.0],UNIT[\"Meter\",1.0]]",
+        "prj_sha256": "dd9e0d8ce05657c9b2d3543f3e1ee5b43eb2a39ed9ab03e3c25dc1a9da54f468",
+        "header_sha256": "bc854802f7749b77f330f296a80af97edaf4a975330e6fcb834405d8819d0645",
+        "full_geometry_read": false
+      },
+      {
+        "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”C_Problem\\Problem C：Data\\Dataset\\Dataset 6\\市.shp",
+        "file_size": 30949632,
+        "header_bbox_Xmin_Ymin_Xmax_Ymax": [
+          73.5023550000001,
+          3.8370299999999826,
+          135.09567,
+          53.56362400000009
+        ],
+        "shape_type": 5,
+        "dbf_record_count": 371,
+        "prj": "GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]]",
+        "prj_sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4",
+        "header_sha256": "1d196b323f4e972f2270edc4758271b5199cccecd1f26e81e0e558bf2463bb8d",
+        "full_geometry_read": false
+      }
+    ],
+    "synthetic_tests": {
+      "label": "SYNTHETIC unit tests only; no values represent a real city",
+      "connectivity": {
+        "elevation_grid": [
+          [
+            0.0,
+            0.0,
+            3.0,
+            3.0,
+            3.0
+          ],
+          [
+            0.0,
+            1.0,
+            3.0,
+            1.0,
+            3.0
+          ],
+          [
+            0.0,
+            1.0,
+            3.0,
+            3.0,
+            3.0
+          ]
+        ],
+        "level": 1,
+        "bathtub_cells": 7,
+        "sea_connected_cells": 6,
+        "isolated_low_cell": [
+          1,
+          3
+        ]
+      },
+      "ten_year_probability": {
+        "synthetic_annual_p": 0.1,
+        "stationary_independent_assumption_required": true,
+        "result": 0.6513215599
+      },
+      "expected_loss": {
+        "exclusive_event_probabilities": [
+          0.8,
+          0.15,
+          0.05
+        ],
+        "synthetic_loss_units": [
+          0.0,
+          10.0,
+          100.0
+        ],
+        "expected_loss": 6.5
+      }
+    },
+    "blockers": [
+      "Datasets 1--3 are local links only; actual dated sea-level, storm and loss series not downloaded/verified",
+      "Raster vertical datum and compatibility with tide gauge/sea-level datum unconfirmed",
+      "Geographic/projected CRS differ across layers; harmonization not performed",
+      "No pixel-level NoData mask, coastline/levee/river connectivity or geometry validity audit yet",
+      "POI is not money: asset values, depth-duration-salinity damage functions and discounting assumptions missing",
+      "No calibrated city probabilities, threshold-loss curves, construction costs, or relocation costs; cannot select highest-risk city numerically"
+    ],
+    "script_sha256": "152ebcacf7446daab7e78e379ae534337b41f69e7ba6dee3fd9bfb2f2ebe2cb5",
+    "link_only_inputs": [
+      {
+        "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”C_Problem\\Problem C：Data\\Dataset\\Dataset 1\\Data Link.txt",
+        "sha256": "071866152dbc30a6028d043dca65f164be57ab55a830dc0bbaf311c4ffef369c",
+        "text": "https://mds.nmdis.org.cn/pages/dataViewDetail.html?type=1&did=&dataSetId=5",
+        "web_content_verified": false
+      },
+      {
+        "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”C_Problem\\Problem C：Data\\Dataset\\Dataset 2\\Data Link.txt",
+        "sha256": "622abb81f797a8740c5574b4152d4f62be05b8f43775987c3d0701de08da06c1",
+        "text": "https://www.nmdis.org.cn/hygb/zghyzhgb/",
+        "web_content_verified": false
+      },
+      {
+        "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”C_Problem\\Problem C：Data\\Dataset\\Dataset 3\\Data Link.txt",
+        "sha256": "27bed818146499ead13245e3b339838d145a302be36692f3a9ba0c8ec8210839",
+        "text": "https://data.tpdc.ac.cn/zh-hans/data/4dd29727-dda6-4e15-8903-0efe94b489dd",
+        "web_content_verified": false
+      }
+    ],
+    "permeability_units": "cm/s, directly read from workbook; x0.01 for m/s. Literature attribution in workbook not independently checked."
+  },
+  "independent_verification": {
+    "scope": "Independent numerical/bookkeeping verification only; excludes scientific validation, semantic labels and real-city risks",
+    "A": {
+      "exact_state_space_piecewise_linear_forcing_I": 43.56605691119047,
+      "RK4_max_displacement_difference_m": 1.0730498729155658e-09,
+      "RK4_max_acceleration_difference_m_s2": 2.768995382318451e-06,
+      "decimal_necessary_acceleration_bounds": [
+        "6626.046699496764666666666666666666666667",
+        "6597.087878945240666666666666666666666667",
+        "6497.090198179115333333333333333333333333",
+        "6494.460406064873333333333333333333333333"
+      ],
+      "triangular_kernel_L1_norm_h1": 1.5
+    },
+    "B": {
+      "train_images": 3458,
+      "validation_images": 550,
+      "correct": 414,
+      "accuracy_recomputed": 0.7527272727272727,
+      "macro_f1_recomputed": 0.62343039340461,
+      "cross_split_shared_hashes": 0,
+      "three_10shot_selections_checked": true
+    },
+    "C": {
+      "raster_metadata_records": 9,
+      "shapefile_header_records": 9,
+      "synthetic_checks": "PASS"
+    },
+    "script_sha256": "1dd938b29ee80d439a413a59a1fb7cbea48e385d40e2f3cdc4a736e782b6f4f3"
+  },
+  "run": {
+    "run_id": "practice-20261116T105016Z",
+    "scope": "Bounded A/B/C practice, not complete contest solutions",
+    "records": [
+      {
+        "code_artifact": "analyze_a.py",
+        "code_sha256": "aeb222c4ae6443c4696fabd8aec90a6af86787cb0659ff4c9110724f6b260ad4",
+        "command": [
+          "C:\\Users\\Lenovo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+          "-X",
+          "utf8",
+          "C:\\Users\\Lenovo\\Documents\\Codex\\2026-11-16\\new-chat\\work\\practice2025\\analyze_a.py"
+        ],
+        "start_utc": "2026-11-16T10:50:16.692206+00:00",
+        "duration_s": 5.862374700000146,
+        "returncode": 0,
+        "status": "completed"
+      },
+      {
+        "code_artifact": "analyze_b.py",
+        "code_sha256": "87f5121411cbc2ffec1c59b100d72f4444ca501b701c8cd91d093090b361696e",
+        "command": [
+          "C:\\Users\\Lenovo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+          "-X",
+          "utf8",
+          "C:\\Users\\Lenovo\\Documents\\Codex\\2026-11-16\\new-chat\\work\\practice2025\\analyze_b.py"
+        ],
+        "start_utc": "2026-11-16T10:50:22.555364+00:00",
+        "duration_s": 8.517156800000066,
+        "returncode": 0,
+        "status": "completed"
+      },
+      {
+        "code_artifact": "analyze_c.py",
+        "code_sha256": "152ebcacf7446daab7e78e379ae534337b41f69e7ba6dee3fd9bfb2f2ebe2cb5",
+        "command": [
+          "C:\\Users\\Lenovo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+          "-X",
+          "utf8",
+          "C:\\Users\\Lenovo\\Documents\\Codex\\2026-11-16\\new-chat\\work\\practice2025\\analyze_c.py"
+        ],
+        "start_utc": "2026-11-16T10:50:31.071450+00:00",
+        "duration_s": 0.5154468999999153,
+        "returncode": 0,
+        "status": "completed"
+      },
+      {
+        "code_artifact": "verify_practice.py",
+        "code_sha256": "1dd938b29ee80d439a413a59a1fb7cbea48e385d40e2f3cdc4a736e782b6f4f3",
+        "command": [
+          "C:\\Users\\Lenovo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+          "-X",
+          "utf8",
+          "C:\\Users\\Lenovo\\Documents\\Codex\\2026-11-16\\new-chat\\work\\practice2025\\verify_practice.py"
+        ],
+        "start_utc": "2026-11-16T10:50:31.587766+00:00",
+        "duration_s": 1.4578197000000728,
+        "returncode": 0,
+        "status": "completed"
+      }
+    ],
+    "dependencies": {
+      "numpy": "2.5.5",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2",
+      "Pillow": "13.0.0",
+      "openpyxl": "3.1.5"
+    },
+    "artifacts": [
+      {
+        "path": "results\\a_results.json",
+        "sha256": "ba757228ba7857b26446f7bee607cf6ced57ec884a237ad5e7791a1ded188cd9"
+      },
+      {
+        "path": "results\\a_scene1_cf.csv",
+        "sha256": "ed8b2f90db358746843c5ba7dd04274d899745551745a7da4cc5f04f86a71f15"
+      },
+      {
+        "path": "results\\a_scene1_full.csv",
+        "sha256": "7303f84345c7493ea1259e2f3c9dfc8e837dd1b3c95ae6634bf7ae21b0ad9b6b"
+      },
+      {
+        "path": "results\\a_scene1_off.csv",
+        "sha256": "8c803ea5c4df989d69718d7ba0f7a9051afdbcada04ad393c1d8edb47620bde1"
+      },
+      {
+        "path": "results\\a_scene2_off.csv",
+        "sha256": "e90295484860576b0c3ae26220a4726c9560e7ce1587a27da528755a3233da71"
+      },
+      {
+        "path": "results\\b_10shot_seed_2025_model.json",
+        "sha256": "090251fd1bf117f5683ba6aa642c2624ccc5bac9f29018f3574b11f38d19d19b"
+      },
+      {
+        "path": "results\\b_10shot_seed_2026_model.json",
+        "sha256": "bba1f85635233e415aa752da7fc9642a835c21bcc1f97bf889709895be7cc865"
+      },
+      {
+        "path": "results\\b_10shot_seed_2027_model.json",
+        "sha256": "9b5cbd31ebe6e0d8ee404e06ed869ed929078d771ef69e0020fe11d1a7d172d4"
+      },
+      {
+        "path": "results\\b_full_model.json",
+        "sha256": "28dbad1799cbd753944a033d2bd90ffa73abd7361c13d04790f5d934ae6ca3ff"
+      },
+      {
+        "path": "results\\b_predictions.json",
+        "sha256": "8b30f21f3f9b5fb042585fca450965dedfbd10979d44b69a0fdddac49482d874"
+      },
+      {
+        "path": "results\\b_results.json",
+        "sha256": "f81fbe5eb8d6a1eb94a6584300d789f8aafd14a2598a10dda35ac1fa9b5ca498"
+      },
+      {
+        "path": "results\\b_split_manifest.json",
+        "sha256": "6a54961d20081194fd3811332c1422255450901b7f4b1d20e34d4dac46b92874"
+      },
+      {
+        "path": "results\\c_results.json",
+        "sha256": "c1d5a5010f1d53a995fe48fb883d8ab76948a20ba421bc7cd9baf1a95711f552"
+      },
+      {
+        "path": "results\\verification.json",
+        "sha256": "b620c96f81214f51963c80de3812e141b7a0fd65adde884715ee8ecded4c4a39"
+      }
+    ]
+  },
+  "supporting_code_hashes_at_review": [
+    {
+      "path": "check_a_feasibility.py",
+      "sha256": "45b77cfe868ac10cc412b669c5a42a21549afd661df4aa39174a4838558a91ba"
+    }
+  ]
+}

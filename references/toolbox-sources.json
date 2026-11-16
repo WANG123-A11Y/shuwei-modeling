@@ -1,0 +1,44 @@
+[
+  {
+    "name": "experiment-design",
+    "path": "C:\\Users\\Lenovo\\.codex\\skills\\experiment-design\\SKILL.md",
+    "sha256": "c4fcf8e3498731c647b5de3f855f5c455cb4125d2bd8e705dff26fc401a27139",
+    "reuse": "reference/routing and independently written concise adaptation; no third-party code vendored"
+  },
+  {
+    "name": "scientific-toolkit-skill",
+    "path": "C:\\Users\\Lenovo\\.codex\\skills\\scientific-toolkit-skill\\SKILL.md",
+    "sha256": "f3806f059a102446776fe8e15a492fed76af0483a4336e4d034e239e4243abb3",
+    "reuse": "reference/routing and independently written concise adaptation; no third-party code vendored"
+  },
+  {
+    "name": "nature-statistics",
+    "path": "C:\\Users\\Lenovo\\.codex\\skills\\nature-statistics\\SKILL.md",
+    "sha256": "89d2a101fc45d7adf8ca327a6da4bda4a696d6364d7c36ead4f53413627a9b6f",
+    "reuse": "reference/routing and independently written concise adaptation; no third-party code vendored"
+  },
+  {
+    "name": "nature-figure",
+    "path": "C:\\Users\\Lenovo\\.codex\\skills\\nature-figure\\SKILL.md",
+    "sha256": "5aefe708a2531c5ddaa8ee74d5155d747e96c0f21a33143d38316b7c5c88ffc4",
+    "reuse": "reference/routing and independently written concise adaptation; no third-party code vendored"
+  },
+  {
+    "name": "nature-ref-verifier",
+    "path": "C:\\Users\\Lenovo\\.codex\\skills\\nature-ref-verifier\\SKILL.md",
+    "sha256": "6a975074d7a1c62c00dd9e8c7367cd2af0ef9d573d6d6ce5ea12f70d9320a516",
+    "reuse": "reference/routing and independently written concise adaptation; no third-party code vendored"
+  },
+  {
+    "name": "paper-review",
+    "path": "C:\\Users\\Lenovo\\.codex\\skills\\paper-review\\SKILL.md",
+    "sha256": "4ae798c33bc20f19c52881e8a4a42f322d896dbb884d76411317985ee5c7500b",
+    "reuse": "reference/routing and independently written concise adaptation; no third-party code vendored"
+  },
+  {
+    "name": "academic-writing-skills",
+    "path": "C:\\Users\\Lenovo\\.codex\\skills\\academic-writing-skills\\SKILL.md",
+    "sha256": "6d382b3846318d6cd02189408f9ba81e27b47aab5c97b01652bdd1d7167a66c6",
+    "reuse": "reference/routing and independently written concise adaptation; no third-party code vendored"
+  }
+]

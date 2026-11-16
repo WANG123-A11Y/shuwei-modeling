@@ -1,0 +1,4 @@
+interface:
+  display_name: "数维杯数学建模"
+  short_description: "统一完成审题建模、可复现求解与英文论文，每次修改执行来源逻辑和未核验三级审核"
+  default_prompt: "使用 $shuwei-modeling 读取本届赛题和附件，独立判断模型与风险，逐问求解，并在每次修改后执行三级审核。"

@@ -1,0 +1,62 @@
+{
+  "retrieved_at": "2026-11-16T10:11:54.613801+00:00",
+  "source_role": "Primary author repositories; no performance claims accepted without evidence.",
+  "sources": [
+    {
+      "repo": "Hjdd14/math-modeling",
+      "author_repository_url": "https://github.com/Hjdd14/math-modeling",
+      "skill_url": "https://raw.githubusercontent.com/Hjdd14/math-modeling/main/SKILL.md",
+      "entry_snapshot_sha256": "5203a8d4493036d9e7583ac67cf6648121d0b0dc8115e129ee3ffdaeb1828591",
+      "observed_default_branch": "main",
+      "observed_pushed_at": "2026-10-30T10:02:48Z",
+      "license_metadata": "MIT",
+      "license_scope": "Repository metadata only; complete terms not independently audited.",
+      "review_scope": "Entry workflow/constraints and repository metadata; not a full source-code audit.",
+      "third_party_code_copied": false,
+      "installed_as_separate_skill": false,
+      "upstream_scripts_executed": false
+    },
+    {
+      "repo": "XiaoMaColtAI/math-modeling-skill",
+      "author_repository_url": "https://github.com/XiaoMaColtAI/math-modeling-skill",
+      "skill_url": "https://raw.githubusercontent.com/XiaoMaColtAI/math-modeling-skill/main/SKILL.md",
+      "entry_snapshot_sha256": "3cbb7985e91d97ce92fd83da222e1709faa52fe6e1994b78a5b41e1620c25e41",
+      "observed_default_branch": "main",
+      "observed_pushed_at": "2026-11-15T20:53:27Z",
+      "license_metadata": "未核验",
+      "license_scope": "Repository metadata only; complete terms not independently audited.",
+      "review_scope": "Entry workflow/constraints and repository metadata; not a full source-code audit.",
+      "third_party_code_copied": false,
+      "installed_as_separate_skill": false,
+      "upstream_scripts_executed": false
+    },
+    {
+      "repo": "Zhengxuejun/mathematical-modeling-agent",
+      "author_repository_url": "https://github.com/Zhengxuejun/mathematical-modeling-agent",
+      "skill_url": "https://raw.githubusercontent.com/Zhengxuejun/mathematical-modeling-agent/main/SKILL.md",
+      "entry_snapshot_sha256": "7c9433b56e8d296cb7b9710faf040324570f9868487ae478ee956073cc9d46c7",
+      "observed_default_branch": "main",
+      "observed_pushed_at": "2026-07-25T15:49:49Z",
+      "license_metadata": "MPL-2.0",
+      "license_scope": "Repository metadata only; complete terms not independently audited.",
+      "review_scope": "Entry workflow/constraints and repository metadata; not a full source-code audit.",
+      "third_party_code_copied": false,
+      "installed_as_separate_skill": false,
+      "upstream_scripts_executed": false
+    },
+    {
+      "repo": "touhouZELDA/math-modeling-contest",
+      "author_repository_url": "https://github.com/touhouZELDA/math-modeling-contest",
+      "skill_url": "https://raw.githubusercontent.com/touhouZELDA/math-modeling-contest/main/SKILL.md",
+      "entry_snapshot_sha256": "73a51100abded80a66c1016945f572ce5368167a0598742681b223e9e8500249",
+      "observed_default_branch": "main",
+      "observed_pushed_at": "2026-08-22T16:32:45Z",
+      "license_metadata": "MIT",
+      "license_scope": "Repository metadata only; complete terms not independently audited.",
+      "review_scope": "Entry workflow/constraints and repository metadata; not a full source-code audit.",
+      "third_party_code_copied": false,
+      "installed_as_separate_skill": false,
+      "upstream_scripts_executed": false
+    }
+  ]
+}

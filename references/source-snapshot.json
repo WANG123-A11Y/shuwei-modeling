@@ -1,0 +1,890 @@
+{
+  "snapshot_date": "2026-11-16",
+  "source_version_note": "Re-audit after any change. Diagnostics do not establish semantic label correctness.",
+  "metadata_inventory": {
+    "root": "D:\\学习\\2025“ShuWei Cup”_Problem",
+    "files": 4789,
+    "bytes": 14295769096,
+    "extensions": {
+      ".pdf": 11,
+      ".xlsx": 2,
+      ".json": 2,
+      ".jpg": 4500,
+      ".txt": 14,
+      ".gson": 8,
+      ".dbf": 9,
+      ".prj": 9,
+      ".shp": 9,
+      ".shx": 9,
+      ".doc": 16,
+      ".cpg": 1,
+      ".sbn": 1,
+      ".sbx": 1,
+      ".xml": 1,
+      ".tif": 9,
+      ".ovr": 9,
+      ".csv": 174,
+      ".pptx": 1,
+      ".rar": 1,
+      ".docx": 2
+    }
+  },
+  "annotations": [
+    {
+      "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”B_Problem\\Problem B：Data\\AgriculturalDisease_trainingset\\AgriculturalDisease_train_annotations.json",
+      "kind": "list",
+      "records": 31718,
+      "keys": [
+        "disease_class",
+        "image_id"
+      ],
+      "images_on_disk": 3500,
+      "classes_in_annotations": 61,
+      "class_counts": {
+        "1": 211,
+        "2": 152,
+        "58": 1414,
+        "59": 2473,
+        "50": 325,
+        "51": 336,
+        "44": 1,
+        "45": 1,
+        "18": 381,
+        "19": 462,
+        "31": 287,
+        "32": 377,
+        "48": 264,
+        "49": 1109,
+        "39": 192,
+        "40": 583,
+        "16": 815,
+        "60": 261,
+        "27": 251,
+        "46": 251,
+        "47": 442,
+        "17": 294,
+        "20": 503,
+        "21": 419,
+        "33": 1430,
+        "7": 116,
+        "8": 110,
+        "25": 1828,
+        "26": 1799,
+        "10": 191,
+        "11": 167,
+        "22": 61,
+        "23": 630,
+        "6": 598,
+        "54": 421,
+        "55": 807,
+        "36": 251,
+        "37": 446,
+        "41": 1208,
+        "9": 376,
+        "14": 208,
+        "15": 498,
+        "34": 203,
+        "35": 510,
+        "42": 319,
+        "43": 966,
+        "4": 142,
+        "5": 40,
+        "12": 483,
+        "13": 355,
+        "28": 857,
+        "29": 770,
+        "0": 1185,
+        "30": 1025,
+        "3": 427,
+        "52": 43,
+        "53": 22,
+        "56": 542,
+        "57": 271,
+        "24": 367,
+        "38": 242
+      },
+      "annotation_records_matching_files": 0,
+      "matched_class_counts": {},
+      "missing_annotation_image_records": 31718,
+      "missing_examples": [
+        "62fd8bf4d53a1b94fbac16738406f10b.jpg",
+        "0bdec5cccbcade6b6e94087cb5509d98.jpg",
+        "8951e940341f77c8d361c1872c67b16d.jpg",
+        "7ed158da58c451f75fb790530d6f19cc.jpg",
+        "9b7399aa-1c3c-4137-ae4e-196cd23fe573___frec_scab 3468.jpg"
+      ],
+      "invalid_records": 0,
+      "repeated_image_id_records": 177,
+      "image_decoding_checked": false
+    },
+    {
+      "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”B_Problem\\Problem B：Data\\AgriculturalDisease_validationset\\AgriculturalDisease_validation_annotations.json",
+      "kind": "list",
+      "records": 4540,
+      "keys": [
+        "disease_class",
+        "image_id"
+      ],
+      "images_on_disk": 1000,
+      "classes_in_annotations": 60,
+      "class_counts": {
+        "1": 30,
+        "2": 22,
+        "58": 202,
+        "59": 353,
+        "50": 46,
+        "51": 48,
+        "44": 1,
+        "18": 54,
+        "19": 66,
+        "31": 40,
+        "32": 54,
+        "48": 38,
+        "49": 158,
+        "39": 27,
+        "40": 83,
+        "16": 116,
+        "60": 37,
+        "27": 36,
+        "46": 36,
+        "47": 63,
+        "17": 42,
+        "20": 74,
+        "21": 59,
+        "33": 204,
+        "7": 12,
+        "8": 18,
+        "25": 269,
+        "26": 262,
+        "10": 27,
+        "11": 24,
+        "22": 9,
+        "23": 90,
+        "6": 85,
+        "54": 60,
+        "55": 115,
+        "36": 36,
+        "37": 64,
+        "41": 173,
+        "9": 54,
+        "14": 29,
+        "15": 71,
+        "34": 29,
+        "35": 73,
+        "42": 46,
+        "43": 138,
+        "4": 20,
+        "5": 6,
+        "12": 69,
+        "13": 51,
+        "28": 122,
+        "29": 110,
+        "0": 169,
+        "30": 147,
+        "3": 61,
+        "52": 4,
+        "53": 5,
+        "56": 77,
+        "57": 39,
+        "24": 52,
+        "38": 35
+      },
+      "annotation_records_matching_files": 0,
+      "matched_class_counts": {},
+      "missing_annotation_image_records": 4540,
+      "missing_examples": [
+        "43234193db4aefa1245592ab36d6c946.jpg",
+        "33a59bdf791a831174ec52caf9c61e29.jpg",
+        "8fd00d9a828c3afec94f224bf6e7d654.jpg",
+        "e6ce489a794d4bbd53893df7e0512774.jpg",
+        "75896d3d-899a-4143-9262-c44bcea75237___frec_scab 3295.jpg"
+      ],
+      "invalid_records": 0,
+      "repeated_image_id_records": 7,
+      "image_decoding_checked": false
+    }
+  ],
+  "image_lists": [
+    {
+      "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”B_Problem\\Problem B：Data\\AgriculturalDisease_trainingset\\train_list.txt",
+      "records": 31541,
+      "classes": 61,
+      "class_counts": {
+        "1": 211,
+        "2": 151,
+        "58": 1338,
+        "59": 2445,
+        "50": 325,
+        "51": 336,
+        "44": 1,
+        "45": 1,
+        "18": 381,
+        "19": 462,
+        "31": 287,
+        "32": 377,
+        "48": 264,
+        "49": 1075,
+        "39": 192,
+        "40": 583,
+        "16": 815,
+        "60": 261,
+        "27": 251,
+        "46": 251,
+        "47": 442,
+        "17": 294,
+        "20": 503,
+        "21": 419,
+        "33": 1430,
+        "7": 116,
+        "8": 110,
+        "25": 1824,
+        "26": 1787,
+        "10": 191,
+        "11": 167,
+        "22": 61,
+        "23": 629,
+        "6": 598,
+        "54": 421,
+        "55": 807,
+        "36": 251,
+        "37": 446,
+        "41": 1208,
+        "9": 376,
+        "14": 205,
+        "15": 480,
+        "34": 203,
+        "35": 510,
+        "42": 319,
+        "43": 966,
+        "4": 142,
+        "5": 40,
+        "12": 483,
+        "13": 355,
+        "28": 857,
+        "29": 770,
+        "0": 1185,
+        "30": 1025,
+        "3": 427,
+        "52": 43,
+        "53": 22,
+        "56": 542,
+        "57": 271,
+        "24": 367,
+        "38": 242
+      },
+      "records_matching_files": 3468,
+      "matched_class_counts": {
+        "16": 402,
+        "10": 191,
+        "11": 167,
+        "14": 205,
+        "15": 480,
+        "12": 483,
+        "13": 355,
+        "0": 1185
+      },
+      "missing_file_records": 28073,
+      "missing_examples": [
+        "1_0.jpg",
+        "1_1.jpg",
+        "1_2.jpg",
+        "1_3.jpg",
+        "1_4.jpg"
+      ],
+      "invalid_records": 0,
+      "repeated_basename_records": 0,
+      "mapping_basis": "basename within the sibling images directory; verify actual loader paths",
+      "image_decoding_checked": false
+    },
+    {
+      "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”B_Problem\\Problem B：Data\\AgriculturalDisease_validationset\\ttest_list.txt",
+      "records": 4533,
+      "classes": 60,
+      "class_counts": {
+        "1": 30,
+        "2": 22,
+        "58": 197,
+        "59": 353,
+        "50": 46,
+        "51": 48,
+        "44": 1,
+        "18": 54,
+        "19": 66,
+        "31": 40,
+        "32": 54,
+        "48": 38,
+        "49": 157,
+        "39": 27,
+        "40": 83,
+        "16": 116,
+        "60": 37,
+        "27": 36,
+        "46": 36,
+        "47": 63,
+        "17": 42,
+        "20": 74,
+        "21": 59,
+        "33": 204,
+        "7": 12,
+        "8": 18,
+        "25": 269,
+        "26": 262,
+        "10": 27,
+        "11": 24,
+        "22": 9,
+        "23": 90,
+        "6": 85,
+        "54": 60,
+        "55": 115,
+        "36": 36,
+        "37": 64,
+        "41": 173,
+        "9": 54,
+        "14": 29,
+        "15": 70,
+        "34": 29,
+        "35": 73,
+        "42": 46,
+        "43": 138,
+        "4": 20,
+        "5": 6,
+        "12": 69,
+        "13": 51,
+        "28": 122,
+        "29": 110,
+        "0": 169,
+        "30": 147,
+        "3": 61,
+        "52": 4,
+        "53": 5,
+        "56": 77,
+        "57": 39,
+        "24": 52,
+        "38": 35
+      },
+      "records_matching_files": 999,
+      "matched_class_counts": {
+        "1": 30,
+        "18": 54,
+        "19": 66,
+        "16": 116,
+        "17": 42,
+        "20": 74,
+        "21": 59,
+        "10": 27,
+        "11": 24,
+        "22": 9,
+        "23": 90,
+        "14": 29,
+        "15": 70,
+        "12": 69,
+        "13": 51,
+        "0": 169,
+        "24": 20
+      },
+      "missing_file_records": 3534,
+      "missing_examples": [
+        "2_30.jpg",
+        "2_31.jpg",
+        "2_32.jpg",
+        "2_33.jpg",
+        "2_34.jpg"
+      ],
+      "invalid_records": 0,
+      "repeated_basename_records": 0,
+      "mapping_basis": "basename within the sibling images directory; verify actual loader paths",
+      "image_decoding_checked": false
+    }
+  ],
+  "image_duplicate_review": {
+    "source_root": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”B_Problem",
+    "generated_at": "2026-11-16T09:06:30.889521+00:00",
+    "image_files": 4500,
+    "sha256_unique": 4481,
+    "duplicate_groups": 15,
+    "duplicate_extra_files": 19,
+    "cross_split_duplicate_groups": 5,
+    "cross_split_list_label_conflicts": 1,
+    "pillow_verify": {
+      "source": "earlier completed read-only audit in this task; not repeated during summary export",
+      "method": "PIL.Image.open then Image.verify, metadata RGB; not a full image pixel decode or near-duplicate check",
+      "training": {
+        "passed": 3500,
+        "failed": 0
+      },
+      "validation": {
+        "passed": 1000,
+        "failed": 0
+      }
+    },
+    "groups": [
+      {
+        "sha256": "c48e8bff5101980778addaffb552e1935240a0a2b9027970b003d9fa98228af7",
+        "file_count": 2,
+        "cross_split": false,
+        "list_label_conflict": false,
+        "ambiguous_JSON_candidate_present": false,
+        "files": [
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_trainingset\\images\\08b836fbf7d285b226183df86c496873 - 副本.jpg",
+            "split": "AgriculturalDisease_trainingset",
+            "list_label": null,
+            "candidate_labels": [
+              15
+            ],
+            "label_source": "normalized_copy_name_to_JSON_candidate"
+          },
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22340.jpg",
+            "split": "AgriculturalDisease_trainingset",
+            "list_label": 15,
+            "candidate_labels": [
+              15
+            ],
+            "label_source": "exact_basename_to_sibling_list"
+          }
+        ]
+      },
+      {
+        "sha256": "3db0442494b877f1c1f147027e215e4b02c0a3f4050f61fe83a008b1f90469f5",
+        "file_count": 3,
+        "cross_split": false,
+        "list_label_conflict": false,
+        "ambiguous_JSON_candidate_present": true,
+        "files": [
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0a30328d2fa042404d5c1dabf90a5909 - 副本 - 副本.jpg",
+            "split": "AgriculturalDisease_trainingset",
+            "list_label": null,
+            "candidate_labels": [
+              14,
+              15
+            ],
+            "label_source": "normalized_copy_name_to_JSON_candidate"
+          },
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0a30328d2fa042404d5c1dabf90a5909 - 副本.jpg",
+            "split": "AgriculturalDisease_trainingset",
+            "list_label": null,
+            "candidate_labels": [
+              14,
+              15
+            ],
+            "label_source": "normalized_copy_name_to_JSON_candidate"
+          },
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22098.jpg",
+            "split": "AgriculturalDisease_trainingset",
+            "list_label": 14,
+            "candidate_labels": [
+              14
+            ],
+            "label_source": "exact_basename_to_sibling_list"
+          }
+        ]
+      },
+      {
+        "sha256": "f32af50f6316ceee45b10f7e8d281b226b63c0668db8ee7944e319220dc363f7",
+        "file_count": 3,
+        "cross_split": false,
+        "list_label_conflict": false,
+        "ambiguous_JSON_candidate_present": true,
+        "files": [
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0ce04ffe0795d31ef61a01ab7ff17e35 - 副本 - 副本.jpg",
+            "split": "AgriculturalDisease_trainingset",
+            "list_label": null,
+            "candidate_labels": [
+              14,
+              15
+            ],
+            "label_source": "normalized_copy_name_to_JSON_candidate"
+          },
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0ce04ffe0795d31ef61a01ab7ff17e35 - 副本.jpg",
+            "split": "AgriculturalDisease_trainingset",
+            "list_label": null,
+            "candidate_labels": [
+              14,
+              15
+            ],
+            "label_source": "normalized_copy_name_to_JSON_candidate"
+          },
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22213.jpg",
+            "split": "AgriculturalDisease_trainingset",
+            "list_label": 14,
+            "candidate_labels": [
+              14
+            ],
+            "label_source": "exact_basename_to_sibling_list"
+          }
+        ]
+      },
+      {
+        "sha256": "76acd473e2b65dad4b378b25e5ff6fdd7a41621bb5372e7c31131f56b5f60141",
+        "file_count": 3,
+        "cross_split": false,
+        "list_label_conflict": false,
+        "ambiguous_JSON_candidate_present": true,
+        "files": [
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0f30decf8533769e099273e1e138d8c1 - 副本 - 副本.jpg",
+            "split": "AgriculturalDisease_trainingset",
+            "list_label": null,
+            "candidate_labels": [
+              14,
+              15
+            ],
+            "label_source": "normalized_copy_name_to_JSON_candidate"
+          },
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0f30decf8533769e099273e1e138d8c1 - 副本.jpg",
+            "split": "AgriculturalDisease_trainingset",
+            "list_label": null,
+            "candidate_labels": [
+              14,
+              15
+            ],
+            "label_source": "normalized_copy_name_to_JSON_candidate"
+          },
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22125.jpg",
+            "split": "AgriculturalDisease_trainingset",
+            "list_label": 14,
+            "candidate_labels": [
+              14
+            ],
+            "label_source": "exact_basename_to_sibling_list"
+          }
+        ]
+      },
+      {
+        "sha256": "1718b4f1a63a94fa20e9bceab2d7a3240bab77fb523d1f473aad1abc83276557",
+        "file_count": 3,
+        "cross_split": true,
+        "list_label_conflict": false,
+        "ambiguous_JSON_candidate_present": true,
+        "files": [
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0f7e6bbc2279bce15558293a5c9c42da - 副本 - 副本.jpg",
+            "split": "AgriculturalDisease_trainingset",
+            "list_label": null,
+            "candidate_labels": [
+              14,
+              15
+            ],
+            "label_source": "normalized_copy_name_to_JSON_candidate"
+          },
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22143.jpg",
+            "split": "AgriculturalDisease_trainingset",
+            "list_label": 14,
+            "candidate_labels": [
+              14
+            ],
+            "label_source": "exact_basename_to_sibling_list"
+          },
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_validationset\\images\\14_3191.jpg",
+            "split": "AgriculturalDisease_validationset",
+            "list_label": 14,
+            "candidate_labels": [
+              14
+            ],
+            "label_source": "exact_basename_to_sibling_list"
+          }
+        ]
+      },
+      {
+        "sha256": "9b6eb303fbc7f9d2bee273a67434b48b2403b47823947b0e149817d7a84dd085",
+        "file_count": 2,
+        "cross_split": false,
+        "list_label_conflict": false,
+        "ambiguous_JSON_candidate_present": false,
+        "files": [
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_27441.JPG",
+            "split": "AgriculturalDisease_trainingset",
+            "list_label": 0,
+            "candidate_labels": [
+              0
+            ],
+            "label_source": "exact_basename_to_sibling_list"
+          },
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_27738.JPG",
+            "split": "AgriculturalDisease_trainingset",
+            "list_label": 0,
+            "candidate_labels": [
+              0
+            ],
+            "label_source": "exact_basename_to_sibling_list"
+          }
+        ]
+      },
+      {
+        "sha256": "85764514e1131b6d99639f76291f3627710613034a3b31590a61affad82cc552",
+        "file_count": 2,
+        "cross_split": false,
+        "list_label_conflict": false,
+        "ambiguous_JSON_candidate_present": false,
+        "files": [
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_27575.JPG",
+            "split": "AgriculturalDisease_trainingset",
+            "list_label": 0,
+            "candidate_labels": [
+              0
+            ],
+            "label_source": "exact_basename_to_sibling_list"
+          },
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_28171.JPG",
+            "split": "AgriculturalDisease_trainingset",
+            "list_label": 0,
+            "candidate_labels": [
+              0
+            ],
+            "label_source": "exact_basename_to_sibling_list"
+          }
+        ]
+      },
+      {
+        "sha256": "1b5b32745df877271a764e49fc41444f6b59a431a2a247d5f1a9e33ef9db2419",
+        "file_count": 2,
+        "cross_split": false,
+        "list_label_conflict": false,
+        "ambiguous_JSON_candidate_present": false,
+        "files": [
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_27594.JPG",
+            "split": "AgriculturalDisease_trainingset",
+            "list_label": 0,
+            "candidate_labels": [
+              0
+            ],
+            "label_source": "exact_basename_to_sibling_list"
+          },
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_27877.JPG",
+            "split": "AgriculturalDisease_trainingset",
+            "list_label": 0,
+            "candidate_labels": [
+              0
+            ],
+            "label_source": "exact_basename_to_sibling_list"
+          }
+        ]
+      },
+      {
+        "sha256": "78d3bb2e62795e236d3bec1318b0b82f03b16cae9d0b744c7dfb467a705e7f73",
+        "file_count": 2,
+        "cross_split": false,
+        "list_label_conflict": false,
+        "ambiguous_JSON_candidate_present": false,
+        "files": [
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_27696.JPG",
+            "split": "AgriculturalDisease_trainingset",
+            "list_label": 0,
+            "candidate_labels": [
+              0
+            ],
+            "label_source": "exact_basename_to_sibling_list"
+          },
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_27846.JPG",
+            "split": "AgriculturalDisease_trainingset",
+            "list_label": 0,
+            "candidate_labels": [
+              0
+            ],
+            "label_source": "exact_basename_to_sibling_list"
+          }
+        ]
+      },
+      {
+        "sha256": "f936621576ec18c3d0874cdd7ebb80558d541e2708db62cab2ec94207f33b8ee",
+        "file_count": 2,
+        "cross_split": false,
+        "list_label_conflict": false,
+        "ambiguous_JSON_candidate_present": false,
+        "files": [
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_27777.jpg",
+            "split": "AgriculturalDisease_trainingset",
+            "list_label": 0,
+            "candidate_labels": [
+              0
+            ],
+            "label_source": "exact_basename_to_sibling_list"
+          },
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_trainingset\\images\\0_27978.jpg",
+            "split": "AgriculturalDisease_trainingset",
+            "list_label": 0,
+            "candidate_labels": [
+              0
+            ],
+            "label_source": "exact_basename_to_sibling_list"
+          }
+        ]
+      },
+      {
+        "sha256": "c35cbebbfd52feb4dbc47697871bab0b0f39938edfb1bc8c760c9eb4f678fb9e",
+        "file_count": 2,
+        "cross_split": false,
+        "list_label_conflict": false,
+        "ambiguous_JSON_candidate_present": false,
+        "files": [
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_trainingset\\images\\12db6d44aabaed8949d3f409fb63c0b7 - 副本.jpg",
+            "split": "AgriculturalDisease_trainingset",
+            "list_label": null,
+            "candidate_labels": [
+              15
+            ],
+            "label_source": "normalized_copy_name_to_JSON_candidate"
+          },
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22459.jpg",
+            "split": "AgriculturalDisease_trainingset",
+            "list_label": 15,
+            "candidate_labels": [
+              15
+            ],
+            "label_source": "exact_basename_to_sibling_list"
+          }
+        ]
+      },
+      {
+        "sha256": "3aa98e36f697efe757e0db4a1748a303b8e1e669c091c2e43a4b05e9562ac687",
+        "file_count": 2,
+        "cross_split": true,
+        "list_label_conflict": true,
+        "ambiguous_JSON_candidate_present": false,
+        "files": [
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_trainingset\\images\\14_22192.jpg",
+            "split": "AgriculturalDisease_trainingset",
+            "list_label": 14,
+            "candidate_labels": [
+              14
+            ],
+            "label_source": "exact_basename_to_sibling_list"
+          },
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_validationset\\images\\15_3278.jpg",
+            "split": "AgriculturalDisease_validationset",
+            "list_label": 15,
+            "candidate_labels": [
+              15
+            ],
+            "label_source": "exact_basename_to_sibling_list"
+          }
+        ]
+      },
+      {
+        "sha256": "a738df9fbade25a83476d511e2081997ca140efb7e8ca660e5a92e12201bd993",
+        "file_count": 2,
+        "cross_split": true,
+        "list_label_conflict": false,
+        "ambiguous_JSON_candidate_present": false,
+        "files": [
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22524.jpg",
+            "split": "AgriculturalDisease_trainingset",
+            "list_label": 15,
+            "candidate_labels": [
+              15
+            ],
+            "label_source": "exact_basename_to_sibling_list"
+          },
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_validationset\\images\\15_3224.jpg",
+            "split": "AgriculturalDisease_validationset",
+            "list_label": 15,
+            "candidate_labels": [
+              15
+            ],
+            "label_source": "exact_basename_to_sibling_list"
+          }
+        ]
+      },
+      {
+        "sha256": "ffa48b85993d2c86fdaca9e042b641b05951bf605aedde4ba8a621e4ebef83b1",
+        "file_count": 2,
+        "cross_split": true,
+        "list_label_conflict": false,
+        "ambiguous_JSON_candidate_present": false,
+        "files": [
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22666.jpg",
+            "split": "AgriculturalDisease_trainingset",
+            "list_label": 15,
+            "candidate_labels": [
+              15
+            ],
+            "label_source": "exact_basename_to_sibling_list"
+          },
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_validationset\\images\\15_3272.jpg",
+            "split": "AgriculturalDisease_validationset",
+            "list_label": 15,
+            "candidate_labels": [
+              15
+            ],
+            "label_source": "exact_basename_to_sibling_list"
+          }
+        ]
+      },
+      {
+        "sha256": "447bb4b11c28a6059820f34b02bf46656a8ce7e413d5a713fb4d675d165598d7",
+        "file_count": 2,
+        "cross_split": true,
+        "list_label_conflict": false,
+        "ambiguous_JSON_candidate_present": false,
+        "files": [
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_trainingset\\images\\15_22746.jpg",
+            "split": "AgriculturalDisease_trainingset",
+            "list_label": 15,
+            "candidate_labels": [
+              15
+            ],
+            "label_source": "exact_basename_to_sibling_list"
+          },
+          {
+            "relative_path": "Problem B：Data\\AgriculturalDisease_validationset\\images\\15_3266.jpg",
+            "split": "AgriculturalDisease_validationset",
+            "list_label": 15,
+            "candidate_labels": [
+              15
+            ],
+            "label_source": "exact_basename_to_sibling_list"
+          }
+        ]
+      }
+    ]
+  },
+  "primary_check": "Cross-split conflicting duplicate SHA256 independently rechecked on both files.",
+  "input_fingerprints": [
+    {
+      "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”B_Problem\\Problem B：Data\\AgriculturalDisease_trainingset\\AgriculturalDisease_train_annotations.json",
+      "sha256": "c788dc3aeca56d845a66713a15adfef60fdbcd0a710d1a85ec4e672dac62ae43"
+    },
+    {
+      "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”B_Problem\\Problem B：Data\\AgriculturalDisease_validationset\\AgriculturalDisease_validation_annotations.json",
+      "sha256": "6d4289ff8a28df75833ead72250ec199219f72002940d61e2295a6c0684fd995"
+    },
+    {
+      "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”B_Problem\\Problem B：Data\\AgriculturalDisease_trainingset\\train_list.txt",
+      "sha256": "d81ac187142b80da765de250c7e43dfa8bc2cd0e5f38875e2c64582bac544cdd"
+    },
+    {
+      "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”B_Problem\\Problem B：Data\\AgriculturalDisease_validationset\\ttest_list.txt",
+      "sha256": "9b374c55feee20d2ceeb81e925c75c3ba6d5578ecc850c390a4df1dba00f000a"
+    }
+  ]
+}

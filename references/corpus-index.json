@@ -1,0 +1,1144 @@
+{
+  "created_on": "2026-11-16",
+  "purpose": "User-specific source index; not model-weight training.",
+  "coverage": {
+    "paper_count": 34,
+    "deep_review_count": 16,
+    "problem_count": 4,
+    "rules_count": 2,
+    "supplied_references_extracted_not_reviewed": 5,
+    "pdf_pages_extracted": 1418,
+    "added_method_check_reviews": 8
+  },
+  "source_status": "45 local PDF hashes checked. All 34 paper abstracts indexed; 16 papers have scoped method/validation/appendix review, 18 remain abstract-level. Original numerical results not reproduced.",
+  "sources": [
+    {
+      "id": "2025-problem-08c1f039",
+      "year": "2025",
+      "kind": "problem",
+      "filename": "Problem A：Active Vibration Suppression Design Based on Centrifugal Actuators.pdf",
+      "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”A_Problem\\Problem A：Active Vibration Suppression Design Based on Centrifugal Actuators.pdf",
+      "pages": 5,
+      "sha256": "2bc01f5f0b15bf999c2d66f3eb44919ed612c4d2394d6cbc3e2d5d5b8e4be475",
+      "topic": "离心式作动器主动抑振",
+      "methods": [],
+      "review_level": "逐页文字审阅；关键图式按需视觉检查",
+      "reviewed_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "not applicable"
+    },
+    {
+      "id": "2025-problem-852ab322",
+      "year": "2025",
+      "kind": "problem",
+      "filename": "Problem B：Research on Crop Leaf Disease.pdf",
+      "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”B_Problem\\Problem B：Research on Crop Leaf Disease.pdf",
+      "pages": 5,
+      "sha256": "d014ec9a9ef39e588bbdbc1c1dfed82a85b35d20ceff3e4ba7e8ae0ef1cff449",
+      "topic": "作物叶片病害与严重度识别",
+      "methods": [],
+      "review_level": "逐页文字审阅；关键图式按需视觉检查",
+      "reviewed_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "not applicable"
+    },
+    {
+      "id": "2025-reference-5547f848",
+      "year": "2025",
+      "kind": "reference",
+      "filename": "Analysis of the Frequent Occurrence of Seawater Intrusion Events ...  Along the Coast North of the Yangtze River in October 2024.pdf",
+      "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”C_Problem\\Problem C：Data\\References\\Analysis of the Frequent Occurrence of Seawater Intrusion Events ...  Along the Coast North of the Yangtze River in October 2024.pdf",
+      "pages": 13,
+      "sha256": "c9b7c1b9337ed64b7c9b8319b8da6d6b07e8b7fe9480304e2c6b54a16e198565",
+      "topic": "Analysis of the Frequent Occurrence of Seawater Intrusion Events ...  Along the Coast North of the Yangtze River in October 2024.pdf",
+      "methods": [],
+      "review_level": "已提取供检索；未作内容审阅",
+      "reviewed_pdf_pages": [],
+      "numerical_results_reproduced": false,
+      "award_status": "not applicable"
+    },
+    {
+      "id": "2025-reference-cafe9dd4",
+      "year": "2025",
+      "kind": "reference",
+      "filename": "Cause Analysis of Seawater Intrusion Events Along the Coasts of the Bohai Sea and the Yellow Sea in October 2024 Based on Numerical Simulation.pdf",
+      "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”C_Problem\\Problem C：Data\\References\\Cause Analysis of Seawater Intrusion Events Along the Coasts of the Bohai Sea and the Yellow Sea in October 2024 Based on Numerical Simulation.pdf",
+      "pages": 10,
+      "sha256": "9902aa76f41858f60f4326ad77e19e4a5047789403ac322218bfca6954cba233",
+      "topic": "Cause Analysis of Seawater Intrusion Events Along the Coasts of the Bohai Sea and the Yellow Sea in October 2024 Based on Numerical Simulation.pdf",
+      "methods": [],
+      "review_level": "已提取供检索；未作内容审阅",
+      "reviewed_pdf_pages": [],
+      "numerical_results_reproduced": false,
+      "award_status": "not applicable"
+    },
+    {
+      "id": "2025-reference-66c6d4c0",
+      "year": "2025",
+      "kind": "reference",
+      "filename": "Dams, dam costs and damnable cost overruns.pdf",
+      "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”C_Problem\\Problem C：Data\\References\\Dams, dam costs and damnable cost overruns.pdf",
+      "pages": 12,
+      "sha256": "be67ee35083eb2ee11f367a264980f47edea60ac18244ef43207ab0462c9f71c",
+      "topic": "Dams, dam costs and damnable cost overruns.pdf",
+      "methods": [],
+      "review_level": "已提取供检索；未作内容审阅",
+      "reviewed_pdf_pages": [],
+      "numerical_results_reproduced": false,
+      "award_status": "not applicable"
+    },
+    {
+      "id": "2025-reference-691542ba",
+      "year": "2025",
+      "kind": "reference",
+      "filename": "Geophysical Research Letters - 2020 - De Dominicis - Future Interactions Between Sea Level Rise  Tides  and Storm Surges in.pdf",
+      "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”C_Problem\\Problem C：Data\\References\\Geophysical Research Letters - 2020 - De Dominicis - Future Interactions Between Sea Level Rise  Tides  and Storm Surges in.pdf",
+      "pages": 11,
+      "sha256": "86bfe7aa1fa0920bf5b5a2a5dcf2e0f5bd5b2fa8b7a45583d89cc9036cb86d84",
+      "topic": "Geophysical Research Letters - 2020 - De Dominicis - Future Interactions Between Sea Level Rise  Tides  and Storm Surges in.pdf",
+      "methods": [],
+      "review_level": "已提取供检索；未作内容审阅",
+      "reviewed_pdf_pages": [],
+      "numerical_results_reproduced": false,
+      "award_status": "not applicable"
+    },
+    {
+      "id": "2025-reference-546eba11",
+      "year": "2025",
+      "kind": "reference",
+      "filename": "Spatial Variability Characteristics of Soil Salinity in Farmland Affected by Seawater Intrusion.pdf",
+      "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”C_Problem\\Problem C：Data\\References\\Spatial Variability Characteristics of Soil Salinity in Farmland Affected by Seawater Intrusion.pdf",
+      "pages": 6,
+      "sha256": "af05b4a6cc3d8cda04260b8b4121d354917b61d330a62daee69ba0a6b9b73b0a",
+      "topic": "Spatial Variability Characteristics of Soil Salinity in Farmland Affected by Seawater Intrusion.pdf",
+      "methods": [],
+      "review_level": "已提取供检索；未作内容审阅",
+      "reviewed_pdf_pages": [],
+      "numerical_results_reproduced": false,
+      "award_status": "not applicable"
+    },
+    {
+      "id": "2025-problem-368a0e4e",
+      "year": "2025",
+      "kind": "problem",
+      "filename": "Problem C：Urban Seawater Intrusion Risk Assessment and Governance Planning.pdf",
+      "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”C_Problem\\Problem C：Urban Seawater Intrusion Risk Assessment and Governance Planning.pdf",
+      "pages": 6,
+      "sha256": "4e2e58cd4c24807c785233292cf03d5a44da3e4eb214c31926873ee06136888c",
+      "topic": "海水入侵风险、损失与治理规划",
+      "methods": [],
+      "review_level": "逐页文字审阅；关键图式按需视觉检查",
+      "reviewed_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "not applicable"
+    },
+    {
+      "id": "2025-problem-b72f866d",
+      "year": "2025",
+      "kind": "problem",
+      "filename": "Problem D：Modeling and Optimization Research on the Impacts of Fukushima Nuclear Wastewater Discharge on the Marine Environment.pdf",
+      "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025_“ShuWei Cup”D_Problem\\Problem D：Modeling and Optimization Research on the Impacts of Fukushima Nuclear Wastewater Discharge on the Marine Environment.pdf",
+      "pages": 4,
+      "sha256": "6ed0bd86ae71dd60cba2589a181a55fd15280e56d673df5bc39724cc501228bc",
+      "topic": "海洋核素扩散、风险与处理方案优化",
+      "methods": [],
+      "review_level": "逐页文字审阅；关键图式按需视觉检查",
+      "reviewed_pdf_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "not applicable"
+    },
+    {
+      "id": "2025-rules-83568a71",
+      "year": "2025",
+      "kind": "rules",
+      "filename": "2025年第十一届数维杯大学生数学建模挑战赛（秋季赛）论文提交流程.pdf",
+      "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025年第十一届数维杯大学生数学建模挑战赛（秋季赛）论文提交流程.pdf",
+      "pages": 4,
+      "sha256": "2ffd64379998f65af824ea6af031280a7e68d1810e815e2a036fac8d5c74d166",
+      "topic": "2025年第十一届数维杯大学生数学建模挑战赛（秋季赛）论文提交流程.pdf",
+      "methods": [],
+      "review_level": "逐页文字审阅；关键图式按需视觉检查",
+      "reviewed_pdf_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "not applicable"
+    },
+    {
+      "id": "2025-rules-2c602a18",
+      "year": "2025",
+      "kind": "rules",
+      "filename": "2025年第十一届数维杯大学生数学建模挑战赛（秋季赛）论文格式规范.pdf",
+      "path": "D:\\学习\\2025“ShuWei Cup”_Problem\\2025年第十一届数维杯大学生数学建模挑战赛（秋季赛）论文格式规范.pdf",
+      "pages": 3,
+      "sha256": "cc0e79cce2684635d67ef1a0bbc2d0eb678a7392a5ed40250d5ab047baeac189",
+      "topic": "2025年第十一届数维杯大学生数学建模挑战赛（秋季赛）论文格式规范.pdf",
+      "methods": [],
+      "review_level": "逐页文字审阅；关键图式按需视觉检查",
+      "reviewed_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "not applicable"
+    },
+    {
+      "id": "2024-A-07b2d7e5",
+      "year": "2024",
+      "kind": "paper",
+      "filename": "A2024100229348.pdf",
+      "path": "D:\\学习\\2024数维杯国际赛优秀论文\\A2024100229348.pdf",
+      "pages": 22,
+      "sha256": "c8efe4dc3e8a1f1fffa27f2f4966c561257c7a9e08f83731610b201675e60c75",
+      "topic": "空速激光多普勒信号频率估计",
+      "methods": [
+        "FFT",
+        "robust MLE",
+        "Welch/自相关"
+      ],
+      "review_level": "摘要浏览与方法索引",
+      "reviewed_pdf_pages": [
+        1
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验"
+    },
+    {
+      "id": "2024-A-1112d018",
+      "year": "2024",
+      "kind": "paper",
+      "filename": "A2024110230228.pdf",
+      "path": "D:\\学习\\2024数维杯国际赛优秀论文\\A2024110230228.pdf",
+      "pages": 40,
+      "sha256": "e828d79780287285fdfd6b19f92bce0532681ad9af6fc121100a917054c2f1b6",
+      "topic": "空速激光多普勒信号频率估计",
+      "methods": [
+        "FFT/PSD/MUSIC",
+        "HMM/CUSUM",
+        "Kalman/小波"
+      ],
+      "review_level": "摘要浏览；方法及检验段落重点审阅",
+      "reviewed_pdf_pages": [
+        1,
+        2,
+        13,
+        23
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验"
+    },
+    {
+      "id": "2024-A-0644c06e",
+      "year": "2024",
+      "kind": "paper",
+      "filename": "A2024110430327.pdf",
+      "path": "D:\\学习\\2024数维杯国际赛优秀论文\\A2024110430327.pdf",
+      "pages": 48,
+      "sha256": "f957a382a9404162d4fbf8632485fbb128e63fe8a8204dddb75179277f71a2dd",
+      "topic": "空速激光多普勒信号频率估计",
+      "methods": [
+        "MLE/矩估计",
+        "交替优化",
+        "压缩感知"
+      ],
+      "review_level": "摘要浏览；方法、验证或附录相关页重点审阅",
+      "reviewed_pdf_pages": [
+        1,
+        14,
+        16,
+        24,
+        25
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验",
+      "visually_checked_pages": [],
+      "review_scope_note": "Detailed scope in training-cases.json; not a full numerical/code reproduction."
+    },
+    {
+      "id": "2024-A-542bc38a",
+      "year": "2024",
+      "kind": "paper",
+      "filename": "A2024111130784.pdf",
+      "path": "D:\\学习\\2024数维杯国际赛优秀论文\\A2024111130784.pdf",
+      "pages": 24,
+      "sha256": "7993d037ffc8c9d1a28da3e35d990898bc2daf745bab71f0da44eacfa53127a8",
+      "topic": "空速激光多普勒信号频率估计",
+      "methods": [
+        "分段 MLE",
+        "NLMS",
+        "带通滤波"
+      ],
+      "review_level": "摘要浏览与方法索引",
+      "reviewed_pdf_pages": [
+        1
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验"
+    },
+    {
+      "id": "2024-B-ddb26e9d",
+      "year": "2024",
+      "kind": "paper",
+      "filename": "B2024093029322.pdf",
+      "path": "D:\\学习\\2024数维杯国际赛优秀论文\\B2024093029322.pdf",
+      "pages": 62,
+      "sha256": "2269e2670205a195332a14f26fcc552495ec3504a442ff73a80eb920f117083a",
+      "topic": "空间变量插值与协同估计",
+      "methods": [
+        "动态 KNN",
+        "GCN/GAT",
+        "IDW 比较"
+      ],
+      "review_level": "摘要浏览；方法、验证或附录相关页重点审阅",
+      "reviewed_pdf_pages": [
+        1,
+        10,
+        11,
+        23,
+        31,
+        32,
+        33
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验",
+      "visually_checked_pages": [],
+      "review_scope_note": "Detailed scope in training-cases.json; not a full numerical/code reproduction."
+    },
+    {
+      "id": "2024-B-814fd191",
+      "year": "2024",
+      "kind": "paper",
+      "filename": "B2024093029335.pdf",
+      "path": "D:\\学习\\2024数维杯国际赛优秀论文\\B2024093029335.pdf",
+      "pages": 66,
+      "sha256": "50697a2a026e9458064798dfe3811c285c860c53378877926cab1c3f552e49b7",
+      "topic": "空间变量插值与协同估计",
+      "methods": [
+        "Kriging",
+        "Co-Kriging",
+        "FMM",
+        "RMSE"
+      ],
+      "review_level": "摘要浏览；方法及检验段落重点审阅",
+      "reviewed_pdf_pages": [
+        1,
+        2,
+        7,
+        26
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验"
+    },
+    {
+      "id": "2024-B-75466767",
+      "year": "2024",
+      "kind": "paper",
+      "filename": "B2024100129342.pdf",
+      "path": "D:\\学习\\2024数维杯国际赛优秀论文\\B2024100129342.pdf",
+      "pages": 51,
+      "sha256": "062f94caee02f7a5085693bec20a7a5e010c2649fe5d72a05ac940743aa92ff0",
+      "topic": "空间变量插值与协同估计",
+      "methods": [
+        "Kriging",
+        "Pearson/Spearman",
+        "空间协同估计"
+      ],
+      "review_level": "摘要浏览与方法索引",
+      "reviewed_pdf_pages": [
+        1
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验"
+    },
+    {
+      "id": "2024-B-d208f949",
+      "year": "2024",
+      "kind": "paper",
+      "filename": "B2024101029505.pdf",
+      "path": "D:\\学习\\2024数维杯国际赛优秀论文\\B2024101029505.pdf",
+      "pages": 35,
+      "sha256": "331177fea2ec5467f85b8c0ad6dc69f4145ee5185076b63346e5625250347083",
+      "topic": "空间变量插值与协同估计",
+      "methods": [
+        "PSO-Kriging",
+        "Kriging-MLP/RandomForest",
+        "差分进化"
+      ],
+      "review_level": "摘要浏览与方法索引",
+      "reviewed_pdf_pages": [
+        1
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验"
+    },
+    {
+      "id": "2024-C-2e9ac6fc",
+      "year": "2024",
+      "kind": "paper",
+      "filename": "C2024092929266.pdf",
+      "path": "D:\\学习\\2024数维杯国际赛优秀论文\\C2024092929266.pdf",
+      "pages": 46,
+      "sha256": "dda7735b0a8b1f2c3fd872ce337b908d58ba7903cf9ace1e9bbf31d9edb42dc7",
+      "topic": "脉冲星计时噪声预测与大气时延",
+      "methods": [
+        "AR/ARIMA",
+        "功率谱",
+        "Herring 映射"
+      ],
+      "review_level": "摘要浏览与方法索引",
+      "reviewed_pdf_pages": [
+        1
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验"
+    },
+    {
+      "id": "2024-C-0a64bc64",
+      "year": "2024",
+      "kind": "paper",
+      "filename": "C2024101629647.pdf",
+      "path": "D:\\学习\\2024数维杯国际赛优秀论文\\C2024101629647.pdf",
+      "pages": 32,
+      "sha256": "89de7c01afd521eb05addfce91ec90931145d614192792e8c926d624db4e87cb",
+      "topic": "脉冲星计时噪声预测与大气时延",
+      "methods": [
+        "功率谱",
+        "随机游走/EMD",
+        "分层大气时延"
+      ],
+      "review_level": "摘要浏览与方法索引",
+      "reviewed_pdf_pages": [
+        1
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验"
+    },
+    {
+      "id": "2024-C-82a1dc7f",
+      "year": "2024",
+      "kind": "paper",
+      "filename": "C2024110530377.pdf",
+      "path": "D:\\学习\\2024数维杯国际赛优秀论文\\C2024110530377.pdf",
+      "pages": 53,
+      "sha256": "83a5e6f31791db3fba0261ad247f38c22d9f263c9c21b9107bb8c491b1beec76",
+      "topic": "脉冲星计时噪声预测与大气时延",
+      "methods": [
+        "PSD 拟合",
+        "SARIMA/LSTM",
+        "大气折射时延"
+      ],
+      "review_level": "摘要浏览；方法及检验段落重点审阅",
+      "reviewed_pdf_pages": [
+        1,
+        2,
+        14,
+        22
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验"
+    },
+    {
+      "id": "2024-C-c058994b",
+      "year": "2024",
+      "kind": "paper",
+      "filename": "C2024110930663.pdf",
+      "path": "D:\\学习\\2024数维杯国际赛优秀论文\\C2024110930663.pdf",
+      "pages": 25,
+      "sha256": "b0b79a97c07e6bb08cce14bac763d6fba5b927ab95b1c0bb6b72b01d91d116dc",
+      "topic": "脉冲星计时噪声预测与大气时延",
+      "methods": [
+        "TVF-EMD",
+        "BDSK-SA",
+        "时延修正"
+      ],
+      "review_level": "摘要浏览；方法、验证或附录相关页重点审阅",
+      "reviewed_pdf_pages": [
+        1,
+        11,
+        12,
+        22,
+        23
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验",
+      "visually_checked_pages": [
+        12
+      ],
+      "review_scope_note": "Detailed scope in training-cases.json; not a full numerical/code reproduction."
+    },
+    {
+      "id": "2024-D-3f8a77ba",
+      "year": "2024",
+      "kind": "paper",
+      "filename": "D2024091329034.pdf",
+      "path": "D:\\学习\\2024数维杯国际赛优秀论文\\D2024091329034.pdf",
+      "pages": 43,
+      "sha256": "868019c210d1e316b97ea5ac706432f0cf1830b4c50d9a0ceb469857fb7126d2",
+      "topic": "城市韧性与可持续发展评价",
+      "methods": [
+        "GBDT/XGBoost/Stacking",
+        "熵权",
+        "TOPSIS"
+      ],
+      "review_level": "摘要浏览与方法索引",
+      "reviewed_pdf_pages": [
+        1
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验"
+    },
+    {
+      "id": "2024-D-b062a05b",
+      "year": "2024",
+      "kind": "paper",
+      "filename": "D2024110230221.pdf",
+      "path": "D:\\学习\\2024数维杯国际赛优秀论文\\D2024110230221.pdf",
+      "pages": 38,
+      "sha256": "81e223292286ff9434d818fe20aa91bce655b5a3f8125e7b335f92e1e6250fdb",
+      "topic": "城市韧性与可持续发展评价",
+      "methods": [
+        "XGBoost",
+        "AHP",
+        "城市服务覆盖"
+      ],
+      "review_level": "摘要浏览与方法索引",
+      "reviewed_pdf_pages": [
+        1
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验"
+    },
+    {
+      "id": "2024-D-ec52eefa",
+      "year": "2024",
+      "kind": "paper",
+      "filename": "D2024110430340.pdf",
+      "path": "D:\\学习\\2024数维杯国际赛优秀论文\\D2024110430340.pdf",
+      "pages": 73,
+      "sha256": "0d0fc74adee8461ffd6d0213abdf977752c783f6d594d363f0cfc57e9587de3c",
+      "topic": "城市韧性与可持续发展评价",
+      "methods": [
+        "回归/RandomForest",
+        "K-means",
+        "多指标评价"
+      ],
+      "review_level": "摘要浏览；方法、验证或附录相关页重点审阅",
+      "reviewed_pdf_pages": [
+        1,
+        8,
+        11,
+        24,
+        26
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验",
+      "visually_checked_pages": [],
+      "review_scope_note": "Detailed scope in training-cases.json; not a full numerical/code reproduction."
+    },
+    {
+      "id": "2024-D-45d4d900",
+      "year": "2024",
+      "kind": "paper",
+      "filename": "D2024111231024.pdf",
+      "path": "D:\\学习\\2024数维杯国际赛优秀论文\\D2024111231024.pdf",
+      "pages": 42,
+      "sha256": "4c95bc8dba9eab4c44af5252802e73222a3bbec2d1bad653f307c1d6ad3453b8",
+      "topic": "城市韧性与可持续发展评价",
+      "methods": [
+        "组合预测/IOWA",
+        "核密度",
+        "AHP/CRITIC/CV",
+        "TOPSIS"
+      ],
+      "review_level": "摘要浏览；方法及检验段落重点审阅",
+      "reviewed_pdf_pages": [
+        1,
+        2,
+        20,
+        26
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验"
+    },
+    {
+      "id": "2023-A-fe33b031",
+      "year": "2023",
+      "kind": "paper",
+      "filename": "A2023101419943.pdf",
+      "path": "D:\\学习\\2023第九届数维杯国际赛优秀论文\\2023第九届数维杯国际赛优秀论文\\A2023101419943.pdf",
+      "pages": 36,
+      "sha256": "63df440a4f691e34fd08460cf5094a2a8307971a97d4e80fd57a2954c58122d9",
+      "topic": "复合直升机姿态与操纵优化",
+      "methods": [
+        "力矩/微分方程",
+        "稳态约束优化",
+        "扰动分析"
+      ],
+      "review_level": "摘要浏览；方法及检验段落重点审阅",
+      "reviewed_pdf_pages": [
+        1,
+        2,
+        8,
+        19
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验"
+    },
+    {
+      "id": "2023-A-23ce2abb",
+      "year": "2023",
+      "kind": "paper",
+      "filename": "A2023101519953.pdf",
+      "path": "D:\\学习\\2023第九届数维杯国际赛优秀论文\\2023第九届数维杯国际赛优秀论文\\A2023101519953.pdf",
+      "pages": 37,
+      "sha256": "15efe6220a981313af6663139dd5741e95127266a2b0e49e209960987d8b66e7",
+      "topic": "复合直升机姿态与操纵优化",
+      "methods": [
+        "角动量方程",
+        "姿态时间函数",
+        "遗传算法"
+      ],
+      "review_level": "摘要浏览；方法、验证或附录相关页重点审阅",
+      "reviewed_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验",
+      "visually_checked_pages": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        21,
+        22,
+        23,
+        24,
+        32,
+        35
+      ],
+      "review_scope_note": "Detailed scope in training-cases.json; not a full numerical/code reproduction."
+    },
+    {
+      "id": "2023-A-9740c22b",
+      "year": "2023",
+      "kind": "paper",
+      "filename": "A2023101519958.pdf",
+      "path": "D:\\学习\\2023第九届数维杯国际赛优秀论文\\2023第九届数维杯国际赛优秀论文\\A2023101519958.pdf",
+      "pages": 32,
+      "sha256": "73d39cfa3a3ced4bc908c2db422ccd9020ae2cae95937350fcf1ba78ff994847",
+      "topic": "复合直升机姿态与操纵优化",
+      "methods": [
+        "气动力矩分解",
+        "动力学微分方程",
+        "姿态优化"
+      ],
+      "review_level": "摘要浏览与方法索引",
+      "reviewed_pdf_pages": [
+        1
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验"
+    },
+    {
+      "id": "2023-B-55ceabb9",
+      "year": "2023",
+      "kind": "paper",
+      "filename": "B2023081819323.pdf",
+      "path": "D:\\学习\\2023第九届数维杯国际赛优秀论文\\2023第九届数维杯国际赛优秀论文\\B2023081819323.pdf",
+      "pages": 47,
+      "sha256": "6ce12feb72b9a0b3233bd4062add83ae53a969b6927d97349f9488011c62d74e",
+      "topic": "棉秆催化热解产率与配比",
+      "methods": [
+        "Pearson",
+        "二次回归",
+        "正态性检查"
+      ],
+      "review_level": "摘要浏览与方法索引",
+      "reviewed_pdf_pages": [
+        1
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验"
+    },
+    {
+      "id": "2023-B-78213709",
+      "year": "2023",
+      "kind": "paper",
+      "filename": "B2023090819411.pdf",
+      "path": "D:\\学习\\2023第九届数维杯国际赛优秀论文\\2023第九届数维杯国际赛优秀论文\\B2023090819411.pdf",
+      "pages": 25,
+      "sha256": "8910de6e16b2f7c5df0fa85d9f888f92839c4055f35bd0d33f03d557df8598fa",
+      "topic": "棉秆催化热解产率与配比",
+      "methods": [
+        "Lasso",
+        "配对 Wilcoxon/t 检验",
+        "双因素方差分析"
+      ],
+      "review_level": "摘要浏览；方法及检验段落重点审阅",
+      "reviewed_pdf_pages": [
+        1,
+        2,
+        14,
+        16
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验"
+    },
+    {
+      "id": "2023-B-4216535f",
+      "year": "2023",
+      "kind": "paper",
+      "filename": "B2023091819500.pdf",
+      "path": "D:\\学习\\2023第九届数维杯国际赛优秀论文\\2023第九届数维杯国际赛优秀论文\\B2023091819500.pdf",
+      "pages": 45,
+      "sha256": "115c548354d8d51ca76a96f3f1ca14b753aa79fd8064d890691b5c51624320ec",
+      "topic": "棉秆催化热解产率与配比",
+      "methods": [
+        "二次拟合",
+        "相关分析",
+        "熵权"
+      ],
+      "review_level": "摘要浏览与方法索引",
+      "reviewed_pdf_pages": [
+        1
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验"
+    },
+    {
+      "id": "2023-B-04b60a28",
+      "year": "2023",
+      "kind": "paper",
+      "filename": "B2023110120593.pdf",
+      "path": "D:\\学习\\2023第九届数维杯国际赛优秀论文\\2023第九届数维杯国际赛优秀论文\\B2023110120593.pdf",
+      "pages": 28,
+      "sha256": "d4cc4781fee956ed3be96eddb8bb2e3b8cb7041d806f9137f3e2652d6469aaac",
+      "topic": "棉秆催化热解产率与配比",
+      "methods": [
+        "非线性回归",
+        "趋势分析",
+        "灰色预测"
+      ],
+      "review_level": "摘要浏览与方法索引",
+      "reviewed_pdf_pages": [
+        1
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验"
+    },
+    {
+      "id": "2023-B-8ef8696a",
+      "year": "2023",
+      "kind": "paper",
+      "filename": "B2023110520773.pdf",
+      "path": "D:\\学习\\2023第九届数维杯国际赛优秀论文\\2023第九届数维杯国际赛优秀论文\\B2023110520773.pdf",
+      "pages": 34,
+      "sha256": "9be52c3caf60aa6dfeceb236ad3ee766b29f7c88e056e22c710287d812e72b4d",
+      "topic": "棉秆催化热解产率与配比",
+      "methods": [
+        "回归",
+        "Friedman",
+        "反应动力学"
+      ],
+      "review_level": "摘要浏览与方法索引",
+      "reviewed_pdf_pages": [
+        1
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验"
+    },
+    {
+      "id": "2023-B-03ab9e23",
+      "year": "2023",
+      "kind": "paper",
+      "filename": "B2023110620859.pdf",
+      "path": "D:\\学习\\2023第九届数维杯国际赛优秀论文\\2023第九届数维杯国际赛优秀论文\\B2023110620859.pdf",
+      "pages": 30,
+      "sha256": "393cb6f111ba0baea0f97817ec3a8ad63f1df948061496280908b8998bda560f",
+      "topic": "棉秆催化热解产率与配比",
+      "methods": [
+        "线性/多项式拟合",
+        "t 检验",
+        "加权动力学"
+      ],
+      "review_level": "摘要浏览；方法、验证或附录相关页重点审阅",
+      "reviewed_pdf_pages": [
+        1,
+        18,
+        19,
+        20,
+        21,
+        23,
+        26,
+        27
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验",
+      "visually_checked_pages": [
+        21
+      ],
+      "review_scope_note": "Detailed scope in training-cases.json; not a full numerical/code reproduction."
+    },
+    {
+      "id": "2023-B-7e183251",
+      "year": "2023",
+      "kind": "paper",
+      "filename": "B2023111421466.pdf",
+      "path": "D:\\学习\\2023第九届数维杯国际赛优秀论文\\2023第九届数维杯国际赛优秀论文\\B2023111421466.pdf",
+      "pages": 34,
+      "sha256": "8803e670c23eb56f4947d6eedd8f33329c880285f353fe66cd396ad09a21d65f",
+      "topic": "棉秆催化热解产率与配比",
+      "methods": [
+        "相关分析",
+        "显著性分析",
+        "加权预测"
+      ],
+      "review_level": "摘要浏览与方法索引",
+      "reviewed_pdf_pages": [
+        1
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验"
+    },
+    {
+      "id": "2023-B-5e283b74",
+      "year": "2023",
+      "kind": "paper",
+      "filename": "B2023111421593.pdf",
+      "path": "D:\\学习\\2023第九届数维杯国际赛优秀论文\\2023第九届数维杯国际赛优秀论文\\B2023111421593.pdf",
+      "pages": 63,
+      "sha256": "16603e0a8e58c92e9a741696d8e06523704135ec79384c417c1eccf99d08735d",
+      "topic": "棉秆催化热解产率与配比",
+      "methods": [
+        "多元线性回归",
+        "t 检验",
+        "反应动力学"
+      ],
+      "review_level": "摘要浏览；方法、验证或附录相关页重点审阅",
+      "reviewed_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验",
+      "visually_checked_pages": [
+        9,
+        10,
+        16,
+        17,
+        19,
+        20,
+        21,
+        22,
+        23,
+        30,
+        33,
+        47,
+        48,
+        50,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        61,
+        62,
+        63
+      ],
+      "review_scope_note": "Detailed scope in training-cases.json; not a full numerical/code reproduction."
+    },
+    {
+      "id": "2023-C-65258d44",
+      "year": "2023",
+      "kind": "paper",
+      "filename": "C2023091819503.pdf",
+      "path": "D:\\学习\\2023第九届数维杯国际赛优秀论文\\2023第九届数维杯国际赛优秀论文\\C2023091819503.pdf",
+      "pages": 23,
+      "sha256": "453700e535eb2f97a7503a4f338fe1cf998435b5621e3ea5de33860e3a337f21",
+      "topic": "AI 文本识别与生成规律",
+      "methods": [
+        "文本特征",
+        "因子分析/PCA",
+        "SVM"
+      ],
+      "review_level": "摘要浏览；方法及检验段落重点审阅",
+      "reviewed_pdf_pages": [
+        1,
+        2,
+        13,
+        16
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验"
+    },
+    {
+      "id": "2023-D-77cfbc48",
+      "year": "2023",
+      "kind": "paper",
+      "filename": "D2023091419459.pdf",
+      "path": "D:\\学习\\2023第九届数维杯国际赛优秀论文\\2023第九届数维杯国际赛优秀论文\\D2023091419459.pdf",
+      "pages": 42,
+      "sha256": "d6e3467476ef9bb3c965be585c11e9c96f92b7b1565fd5375b552857a594afe7",
+      "topic": "洗衣策略与资源优化",
+      "methods": [
+        "遗传算法",
+        "线性规划",
+        "回溯"
+      ],
+      "review_level": "摘要浏览与方法索引",
+      "reviewed_pdf_pages": [
+        1
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验"
+    },
+    {
+      "id": "2023-D-79d6eaae",
+      "year": "2023",
+      "kind": "paper",
+      "filename": "D2023091519466.pdf",
+      "path": "D:\\学习\\2023第九届数维杯国际赛优秀论文\\2023第九届数维杯国际赛优秀论文\\D2023091519466.pdf",
+      "pages": 39,
+      "sha256": "369e87da0670799994d796ff5458a11997c373444c03d4c538b734ad333ce549",
+      "topic": "洗衣策略与资源优化",
+      "methods": [
+        "迭代",
+        "动态规划",
+        "分组优化"
+      ],
+      "review_level": "摘要浏览与方法索引",
+      "reviewed_pdf_pages": [
+        1
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验"
+    },
+    {
+      "id": "2023-D-7cab964f",
+      "year": "2023",
+      "kind": "paper",
+      "filename": "D2023091719488.pdf",
+      "path": "D:\\学习\\2023第九届数维杯国际赛优秀论文\\2023第九届数维杯国际赛优秀论文\\D2023091719488.pdf",
+      "pages": 20,
+      "sha256": "36fa43c66643a438aca945d3781581cec89f719948939ecae50b10f08ca254fe",
+      "topic": "洗衣策略与资源优化",
+      "methods": [
+        "非线性规划",
+        "模拟退火",
+        "分组"
+      ],
+      "review_level": "摘要浏览与方法索引",
+      "reviewed_pdf_pages": [
+        1
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验"
+    },
+    {
+      "id": "2023-D-a55ef30c",
+      "year": "2023",
+      "kind": "paper",
+      "filename": "D2023101319919.pdf",
+      "path": "D:\\学习\\2023第九届数维杯国际赛优秀论文\\2023第九届数维杯国际赛优秀论文\\D2023101319919.pdf",
+      "pages": 32,
+      "sha256": "0df54b1f3cd0ea700855074ce1688f35f48367294711993b2a151689d0c50f62",
+      "topic": "洗衣策略与资源优化",
+      "methods": [
+        "动态规划",
+        "指数衰减",
+        "多目标规划"
+      ],
+      "review_level": "摘要浏览与方法索引",
+      "reviewed_pdf_pages": [
+        1
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验"
+    },
+    {
+      "id": "2023-D-e0460fea",
+      "year": "2023",
+      "kind": "paper",
+      "filename": "D2023111221274.pdf",
+      "path": "D:\\学习\\2023第九届数维杯国际赛优秀论文\\2023第九届数维杯国际赛优秀论文\\D2023111221274.pdf",
+      "pages": 32,
+      "sha256": "1a98f4ef30b523b4a85ebcaf8af9ba31c9c487faf8486244ab505e1893a7f01d",
+      "topic": "洗衣策略与资源优化",
+      "methods": [
+        "多目标优化",
+        "邻域搜索",
+        "图论兼容分组",
+        "CPLEX"
+      ],
+      "review_level": "摘要浏览；方法及检验段落重点审阅",
+      "reviewed_pdf_pages": [
+        1,
+        2,
+        25,
+        29
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验"
+    },
+    {
+      "id": "2023-D-87f4c6c3",
+      "year": "2023",
+      "kind": "paper",
+      "filename": "D2023111521796.pdf",
+      "path": "D:\\学习\\2023第九届数维杯国际赛优秀论文\\2023第九届数维杯国际赛优秀论文\\D2023111521796.pdf",
+      "pages": 40,
+      "sha256": "2004dec800441d10e69e1ca626a4e93a5f01d55bbc2cd7700892c1091a2bf3b9",
+      "topic": "洗衣策略与资源优化",
+      "methods": [
+        "洗涤残留模型",
+        "模拟退火",
+        "策略优化"
+      ],
+      "review_level": "摘要浏览；方法、验证或附录相关页重点审阅",
+      "reviewed_pdf_pages": [
+        1,
+        10,
+        11,
+        12,
+        16
+      ],
+      "numerical_results_reproduced": false,
+      "award_status": "用户提供目录标记为优秀论文；奖项未独立核验",
+      "visually_checked_pages": [
+        12
+      ],
+      "review_scope_note": "Detailed scope in training-cases.json; not a full numerical/code reproduction."
+    }
+  ]
+}
